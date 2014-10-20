@@ -1,6 +1,11 @@
 body, html {
   margin: 0;
   padding: 0;
+  /* Stephanies gonna hate me for this */
+  background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, blue); /* Standard syntax */
 }
 
 .header {
@@ -9,7 +14,7 @@ body, html {
   color: #FFF;
 }
 
-#bubblesnapp {
+#bubblesnapp-logo {
    background-image: url(../images/bubblesnapp.png);
    background-repeat: no-repeat;
    background-position: left top;
@@ -17,7 +22,7 @@ body, html {
    margin-bottom:50px;
 }
 
-.circle{
+.circle {
    width:100px;
    height:100px;
    border-radius:50px;
