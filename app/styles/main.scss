@@ -2,10 +2,10 @@ body, html {
   margin: 0;
   padding: 0;
   /* Stephanies gonna hate me for this */
-  background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(orange, blue); /* Standard syntax */
+  background: -webkit-linear-gradient(green, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(green, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(green, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(green, blue); /* Standard syntax */
 }
 
 .header {
