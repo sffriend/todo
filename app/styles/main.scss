@@ -10,11 +10,9 @@ body, html {
 }
 
 #bubblesnapp-logo {
-   background-image: url(../images/bubblesnapp.png);
-   background-repeat: no-repeat;
-   background-position: left top;
-   padding-top:68px;
-   margin-bottom:50px;
+  background: url(../images/bubblesnapp.png) no-repeat left top;
+  padding-top:68px;
+  margin-bottom:50px;
 }
 
 .circle {
