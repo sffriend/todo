@@ -1,23 +1,17 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Grant\/Documents\/HCI\/todo\/app\/styles\/main\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\000031}}
 body, html {
   margin: 0;
   padding: 0;
-  /* Stephanies gonna hate me for this */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(green, blue);
-  /* Standard syntax */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Grant\/Documents\/HCI\/todo\/app\/styles\/main\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\000036}}
 .header {
   height: 5em;
   background-color: #000;
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Grant\/Documents\/HCI\/todo\/app\/styles\/main\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000312}}
 #bubblesnapp-logo {
   background-image: url(../images/bubblesnapp.png);
   background-repeat: no-repeat;
@@ -26,14 +20,28 @@ body, html {
   margin-bottom: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Grant\/Documents\/HCI\/todo\/app\/styles\/main\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000320}}
 .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  font-size: 20px;
-  color: #fff;
-  line-height: 100px;
-  text-align: center;
-  background: #000;
+  background: #3077a2;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px #333;
+  cursor: pointer;
+  height: 50px;
+  opacity: 0.5;
+  position: absolute;
+  left: 50px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 50px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000334}}
+.circle:hover {
+  height: 75px;
+  opacity: 1;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  width: 75px;
 }
