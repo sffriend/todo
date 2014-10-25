@@ -1,40 +1,21 @@
+/* Compass Imports */
 @import "compass/css3";
 @import "compass/reset";
 
+/* Variables */
+$font: 'Open Sans', sans-serif;
+$header-color: #000000;
+$background-color: #F0F0F0;
+$project-color: coral;
+$task-color: pink;
+$task-text: #FFFFFF;
+
+/* Global Styles & Typography */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* Header */
-.header {
-  height: auto;
-  padding: 1em;
-  background-color: #000;
-  color: #FFF;
-
-  li:not(.logo) {
-    background-color: coral;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 5%;
-    padding: 1em 5%;
-    vertical-align: middle;
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: 600;
-    }
-  }
-  
-  li:not(.logo):hover {
-    background-color: pink;
-  }
+  font-family: $font;
+  background-color: $background-color;
 }
 
 h1 {
@@ -42,6 +23,43 @@ h1 {
   font-weight: 600;
 }
 
+/* Header */
+.header {
+  height: auto;
+  padding: 1em;
+  background-color: $header-color;
+  color: $task-text;
+
+
+  li {
+    display: inline-block;
+    margin: 0 3%;
+    padding: 1em 5%;
+    vertical-align: middle;
+
+  &.add-task-btn {
+    margin: 0;
+    padding: 15px; 
+  }
+
+    a {
+      color: $task-text;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+  }
+  
+ 
+}
+
+  li:not(.logo) {
+    background-color: $project-color;
+  }
+
+ li:not(.logo):hover {
+    background-color: $task-color;
+  }
 
 /* Logo */
 /* #bubblesnapp-logo {
@@ -56,9 +74,8 @@ h1 {
   @include opacity(0.5);
   @include transform-origin(50%, 50%);
   @include transition(all 0.5s);
-  @include box-shadow(0 1px 3px #333);
   @include border-radius(50%);
-  background-color: #3077a2;
+  background-color: $project-color;
   width: 150px;
   height: 150px;
   cursor: pointer;
@@ -73,7 +90,7 @@ h1 {
   }
 
   input {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font;
     font-size: 0.8em;
     width: 100%
   }
@@ -90,3 +107,18 @@ h1 {
     font-size: 1em;
   }
 }
+
+.add-todo {
+  background-color: $project-color;
+  width: 300px;
+  padding: 1%;
+  margin: 5%;
+  position: absolute;
+  top: 100px;
+
+  div, button {
+    margin: 3%;
+  }
+}
+
+
