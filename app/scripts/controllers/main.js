@@ -9,7 +9,7 @@
  * @param done [boolean] completed task
  * @param priority [
  */
-var todo = function(name, description, date, isDone, priority) {
+var todo = function(name, description, date, priority, isDone) {
     this.name = name;
     this.description = description;
     this.date = date;
@@ -72,12 +72,11 @@ function clearInput($scope) {
     $scope.tDescription = '';
 }
 
-
 /**
  *
  */
 function initTodos() {
-    $('.circle').randomizeLocation($(this));
+    $('.circle').each(randomizeLocation($(this)));
 }
 
 /**
@@ -94,4 +93,6 @@ function randomizeLocation(t) {
     t.style.top = randHeight + "px";
     t.style.left = randWidth + "px";
 }
+
+
 
