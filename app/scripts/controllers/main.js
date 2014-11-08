@@ -6,11 +6,13 @@
  * @param name [String] of the task
  * @param description [String] of the task
  * @param date [Date] set for the task
+ * @param type [String] project or task
  * @param done [boolean] completed task
  */
-var todo = function(name, description, date, done) {
+var todo = function(name, description, type, date, done) {
     this.name = name;
     this.description = description;
+    this.type = type;
     this.date = date;
     this.done = done;
 };
@@ -31,7 +33,7 @@ angular.module('todoApp')
 
     // adding a task
     $scope.addTodo = function () {
-      var newTodo = new todo($scope.tName, $scope.tDescription, null, false);
+      var newTodo = new todo($scope.tName, $scope.tDescription, "task", null, false);
       $scope.todos.push(newTodo);
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
@@ -54,5 +56,29 @@ angular.module('todoApp')
  */
 function clearInput($scope) {
     $scope.tName = '';
-    $scope.description = '';
+    $scope.tDescription = '';
 }
+
+
+/**
+ *
+ */
+function initTodos() {
+    $('.circle').randomizeLocation($(this));
+}
+
+/**
+ *
+ * @param t
+ */
+function randomizeLocation(t) {
+    var availHeight = window.innerHeight - 50;
+    var availWidth = window.innerWidth - 10;
+
+    var randHeight = Math.round(Math.random() * availHeight);
+    var randWidth= Math.round(Math.random() * availWidth);
+
+    t.style.top = randHeight + "px";
+    t.style.left = randWidth + "px";
+}
+

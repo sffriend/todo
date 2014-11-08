@@ -83,24 +83,25 @@ h1 {
 /* Header */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000327}}
 .header {
-  height: auto;
-  padding: 1em;
   background-color: #000000;
   color: #FFFFFF;
+  height: 50px;
+  padding: 1em;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000335}}
 .header li {
   display: inline-block;
   margin: 0 3%;
   padding: 1em 5%;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000341}}
 .header li.add-task-btn {
   margin: 0;
   padding: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000346}}
 .header li a {
   color: #FFFFFF;
   text-decoration: none;
@@ -108,24 +109,32 @@ h1 {
   font-weight: 600;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000357}}
 li:not(.logo) {
   background-color: coral;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000361}}
 li:not(.logo):hover {
   background-color: pink;
 }
 
-/* Logo */
-/* #bubblesnapp-logo {
-  background: url(../images/bubblesnapp.png) no-repeat left top;
-  padding-top:68px;
-  margin-bottom:50px;
-} */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000393}}
+.add-todo {
+  background-color: coral;
+  margin: 5%;
+  padding: 1%;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003101}}
+.add-todo div, .add-todo button {
+  margin: 3%;
+}
+
 /* Circle Animation */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003108}}
 .circle {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -140,21 +149,21 @@ li:not(.logo):hover {
   margin: 10% auto;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003120}}
 .circle > .wrap {
   position: relative;
   top: 40%;
   margin: 0 auto;
   width: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003127}}
 .circle input {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .circle:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -164,21 +173,7 @@ li:not(.logo):hover {
   height: 250px;
   margin: 15% auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003141}}
 .circle:hover input {
   font-size: 1em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003111}}
-.add-todo {
-  background-color: coral;
-  width: 300px;
-  padding: 1%;
-  margin: 5%;
-  position: absolute;
-  top: 100px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003119}}
-.add-todo div, .add-todo button {
-  margin: 3%;
 }

@@ -1,3 +1,8 @@
+<script>
+    window.onLoad = initTodos();
+</script>
+
+
 <div class="container">
 
   <!-- Todos input -->
@@ -8,9 +13,9 @@
     </div>
     <div>
       <label>Description</label>
-      <textarea name="description" ng-model="tDescription"></textarea>
+      <textarea name="description" ng-model="tDescription" placeholder="Add a description"></textarea>
     </div>
-    <button ng-click="addTodo()">Save</button>
+    <button ng-click="addTodo()">Add</button>
     <button ng-click="destroy()">Cancel</button>
   </div>
   

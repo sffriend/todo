@@ -25,10 +25,11 @@ h1 {
 
 /* Header */
 .header {
-  height: auto;
-  padding: 1em;
   background-color: $header-color;
   color: $task-text;
+  height: 50px;
+  padding: 1em;
+  position: relative;
 
 
   li {
@@ -57,16 +58,50 @@ h1 {
     background-color: $project-color;
   }
 
- li:not(.logo):hover {
+  li:not(.logo):hover {
     background-color: $task-color;
   }
 
-/* Logo */
-/* #bubblesnapp-logo {
-  background: url(../images/bubblesnapp.png) no-repeat left top;
-  padding-top:68px;
-  margin-bottom:50px;
-} */
+
+// tried to make the half circle add button ---- doesn't work yet
+//.add-todo-circle {
+//  @include border-radius(50%);
+//  @include opacity(0.5);
+//  background-color: $project-color;
+//  height: 150px;
+//  margin-left: auto;
+//  margin-right: auto;
+//  margin-top: -75px;
+//  vertical-align: middle;
+//  width: 150px;
+//  z-index: -1;
+//
+//  a {
+//    color: $task-text;
+//    font-size: 1.2em;
+//    font-weight: 600;
+//    text-decoration: none;
+//  }
+//
+//  &:hover {
+//    @include opacity(1);
+//    background-color: $task-color;
+//    z-index: 1;
+//  }
+//}
+
+.add-todo {
+  background-color: $project-color;
+  margin: 5%;
+  padding: 1%;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+
+  div, button {
+    margin: 3%;
+  }
+}
 
 /* Circle Animation */
 
@@ -105,19 +140,6 @@ h1 {
 
   input {
     font-size: 1em;
-  }
-}
-
-.add-todo {
-  background-color: $project-color;
-  width: 300px;
-  padding: 1%;
-  margin: 5%;
-  position: absolute;
-  top: 100px;
-
-  div, button {
-    margin: 3%;
   }
 }
 
