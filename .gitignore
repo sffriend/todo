@@ -1,7 +1,13 @@
+#intellij files
 *.iml
 *.idea
+
+# sass cache
 .sass-cache/*
+
+#other stuff that doesn't matter
 dist
 node_modules
-.npm-debug.log
 tmp
+.tmp/*
+.npm-debug.log
