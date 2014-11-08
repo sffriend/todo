@@ -64,31 +64,31 @@ h1 {
 
 
 // tried to make the half circle add button ---- doesn't work yet
-//.add-todo-circle {
-//  @include border-radius(50%);
-//  @include opacity(0.5);
-//  background-color: $project-color;
-//  height: 150px;
-//  margin-left: auto;
-//  margin-right: auto;
-//  margin-top: -75px;
-//  vertical-align: middle;
-//  width: 150px;
-//  z-index: -1;
-//
-//  a {
-//    color: $task-text;
-//    font-size: 1.2em;
-//    font-weight: 600;
-//    text-decoration: none;
-//  }
-//
-//  &:hover {
-//    @include opacity(1);
-//    background-color: $task-color;
-//    z-index: 1;
-//  }
-//}
+.add-todo-circle {
+  @include border-radius(50%);
+  @include opacity(0.5);
+  background-color: $project-color;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75px;
+  vertical-align: middle;
+  width: 150px;
+  z-index: 1;
+
+  a {
+    color: $task-text;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  &:hover {
+    @include opacity(1);
+    background-color: $task-color;
+    z-index: 1;
+  }
+}
 
 .add-todo {
   background-color: $project-color;

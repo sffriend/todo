@@ -6,16 +6,29 @@
  * @param name [String] of the task
  * @param description [String] of the task
  * @param date [Date] set for the task
- * @param type [String] project or task
  * @param done [boolean] completed task
+ * @param priority [
  */
-var todo = function(name, description, type, date, done) {
+var todo = function(name, description, date, isDone, priority) {
     this.name = name;
     this.description = description;
-    this.type = type;
     this.date = date;
-    this.done = done;
+    this.priority = priority;
+    this.isDone = isDone;
 };
+
+
+/**
+ * Define priority of todo
+ *
+ * @type {{NONE: string, LOW: string, MEDIUM: string, HIGH: string}}
+ */
+var priorityEnum = {
+    NONE : 'none',
+    LOW : 'low',
+    MEDIUM : 'medium',
+    HIGH : 'high'
+}
 
 
 angular.module('todoApp')
@@ -33,7 +46,7 @@ angular.module('todoApp')
 
     // adding a task
     $scope.addTodo = function () {
-      var newTodo = new todo($scope.tName, $scope.tDescription, "task", null, false);
+      var newTodo = new todo($scope.tName, $scope.tDescription, null, priorityEnum.NONE, false);
       $scope.todos.push(newTodo);
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);

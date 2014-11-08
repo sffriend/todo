@@ -5,36 +5,8 @@
 
 <div class="container">
 
-  <!-- Todos input -->
-  <div ng-show="show" class="add-todo">
-    <div>
-      <label>Name</label>
-      <input type="text" ng-model="tName" placeholder="Add a todo" class="form-control">
-    </div>
-    <div>
-      <label>Description</label>
-      <textarea name="description" ng-model="tDescription" placeholder="Add a description"></textarea>
-    </div>
-    <button ng-click="addTodo()">Add</button>
-    <button ng-click="destroy()">Cancel</button>
-  </div>
-  
-  <!-- Todos list -->
-    <div class="circle input-group" ng-repeat="todo in todos">   
-      <div class="wrap">
-       
-        <h1>{{todo.name}}</h1>
-        
-        <h2>{{todo.description}}</h2>
-        
-        <span class="input-group-btn">
-          <button class="btn btn-danger" ng-click="editTodo($index)" aria-label="Edit">Edit</button>
-        </span>
-        <span class="input-group-btn">
-          <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-        </span>
+    <div ng-include src="'views/add-todo.html'"></div>
 
-      </div>
-    </div>
+    <div ng-include src="'views/display-todo.html'"></div>
 
 </div>
