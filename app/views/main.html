@@ -9,12 +9,29 @@
     <div ng-show="show" class="add-todo">
         <div>
             <label>Name</label>
-            <input type="text" ng-model="tName" placeholder="Add a todo" class="form-control">
+            <input type="text" ng-model="name" placeholder="Add a todo" class="form-control">
         </div>
+
         <div>
             <label>Description</label>
-            <textarea name="description" ng-model="tDescription" placeholder="Add a description"></textarea>
+            <textarea name="description" ng-model="description" placeholder="Add a description"></textarea>
         </div>
+
+        <div>
+            <label>Date</label>
+            <input type="text" placeholder="MM/dd/yy" ng-model="date">
+        </div>
+
+        <div>
+            <label>Priority</label>
+            <br>
+            <input type="radio" name="priority" value="NONE" ng-model="priority">None<br>
+            <input type="radio" name="priority" value="LOW" ng-model="priority">Low<br>
+            <input type="radio" name="priority" value="MEDIUM" ng-model="priority">Medium<br>
+            <input type="radio" name="priority" value="HIGH" ng-model="priority">High<br>
+        </div>
+
+
         <button ng-click="addTodo()">Add</button>
         <button ng-click="destroy()">Cancel</button>
     </div>
@@ -22,7 +39,7 @@
 
 
     <!-- Todos list -->
-    <div class="circle input-group" ng-repeat="todo in todos">
+    <div class="circle input-group" ng-repeat="todo in todos track by $index">
         <div class="wrap">
 
             <h1>{{todo.name}}</h1>

@@ -46,7 +46,8 @@ angular.module('todoApp')
 
     // adding a task
     $scope.addTodo = function () {
-      var newTodo = new todo($scope.tName, $scope.tDescription, null, priorityEnum.NONE, false);
+      var date = convertDate($scope.date);
+      var newTodo = new todo($scope.name, $scope.description, date, priorityEnum.NONE, false);
       $scope.todos.push(newTodo);
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
@@ -64,12 +65,23 @@ angular.module('todoApp')
 
 
 /**
+ *
+ * @returns {Date}
+ */
+function convertDate() {
+    return null;
+}
+
+
+/**
  * Clears the input fields
  * @param $scope
  */
 function clearInput($scope) {
-    $scope.tName = '';
-    $scope.tDescription = '';
+    $scope.name = '';
+    $scope.description = '';
+    $scope.date = '';
+
 }
 
 /**
