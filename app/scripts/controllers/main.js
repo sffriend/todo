@@ -53,6 +53,7 @@ angular.module('todoApp')
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
       clearInput($scope);
+      $('#add-todo').addClass('ng-hide');
     };
 
     // removing a task
@@ -82,6 +83,7 @@ function clearInput($scope) {
     $scope.name = '';
     $scope.description = '';
     $scope.date = '';
+    $(this).closest('.add-todo').hide();
 }
 
 function colorPriority($scope) {
@@ -94,28 +96,6 @@ function colorPriority($scope) {
   else {
     $(".circle").addClass('medium');
   }
-}
-
-/**
- *
- */
-function initTodos() {
-    $('.circle').each(randomizeLocation($(this)));
-}
-
-/**
- *
- * @param t
- */
-function randomizeLocation(t) {
-    var availHeight = window.innerHeight - 50;
-    var availWidth = window.innerWidth - 10;
-
-    var randHeight = Math.round(Math.random() * availHeight);
-    var randWidth= Math.round(Math.random() * availWidth);
-
-    t.style.top = randHeight + "px";
-    t.style.left = randWidth + "px";
 }
 
 
