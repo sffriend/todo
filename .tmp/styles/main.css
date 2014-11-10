@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Variables */
 /* Global Styles & Typography */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000316}}
 body, html {
   margin: 0;
   padding: 0;
@@ -74,14 +74,14 @@ body, html {
   background-color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000323}}
 h1 {
   font-size: 2em;
   font-weight: 200;
 }
 
 /* Header */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000329}}
 .header {
   background-color: #FFF;
   color: #000;
@@ -89,19 +89,19 @@ h1 {
   padding: 1em;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000337}}
 .header li {
   display: inline-block;
   margin: 0 3%;
   padding: 1em 5%;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000343}}
 .header li.add-task-btn {
   margin: 0;
   padding: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000348}}
 .header li a {
   color: #FFFFFF;
   text-decoration: none;
@@ -109,17 +109,17 @@ h1 {
   font-weight: 600;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000359}}
 li:not(.logo) {
   background-color: #F0F0F0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000363}}
 li:not(.logo):hover {
   background-color: #F0F0F0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000369}}
 .add-todo-circle {
   border-radius: 50%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -133,14 +133,14 @@ li:not(.logo):hover {
   width: 150px;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000381}}
 .add-todo-circle a {
   color: #FFFFFF;
   font-size: 1.2em;
   font-weight: 600;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000388}}
 .add-todo-circle:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -148,7 +148,7 @@ li:not(.logo):hover {
   z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\0000395}}
 .add-todo {
   background-color: #F0F0F0;
   margin: 5%;
@@ -157,13 +157,13 @@ li:not(.logo):hover {
   top: 100px;
   width: 300px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003103}}
 .add-todo div, .add-todo button {
   margin: 3%;
 }
 
 /* Circle Animation */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003110}}
 .circle {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -177,7 +177,7 @@ li:not(.logo):hover {
   height: 200px;
   margin: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003122}}
 .circle > .wrap {
   position: relative;
   top: 20%;
@@ -185,39 +185,39 @@ li:not(.logo):hover {
   margin: 0 auto;
   width: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003129}}
 .circle > .wrap h3 {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .circle input {
   font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003140}}
 .low {
   background-color: #66BDCC;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003144}}
 .medium {
   background-color: #FFE45A;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003148}}
 .high {
   background-color: #FF7977;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003152}}
 .circle-container {
   margin: 8% auto;
   width: 90%;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003158}}
 .project-label {
   color: #000;
   height: auto;
@@ -225,7 +225,7 @@ li:not(.logo):hover {
   padding: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003166}}
 #done-check {
   float: left;
 }
