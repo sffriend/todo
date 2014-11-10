@@ -26,7 +26,7 @@ var todo = function(name, project, date, priority, isDone) {
 var priorityEnum = {
     NONE : 'none',
     LOW : 'low',
-    MEDIUM : 'medium',
+    medium : 'medium',
     HIGH : 'high'
 }
 
@@ -48,7 +48,7 @@ angular.module('todoApp')
     $scope.addTodo = function () {
       var date = convertDate($scope.date);
       var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
-      colorPriority($scope);
+      //colorPriority($scope);
       $scope.todos.push(newTodo);
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
@@ -82,6 +82,7 @@ function clearInput($scope) {
     $scope.name = '';
     $scope.description = '';
     $scope.date = '';
+    $scope.project = '';
 }
 
 function colorPriority($scope) {

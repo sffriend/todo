@@ -36,18 +36,16 @@
     </div>
 
 
-
     <!-- Todos list -->
     <div class="circle-container">
-        <div class="circle" ng-repeat="todo in todos track by $index">
+        <div class="circle {{todo.priority}}" ng-class="" ng-repeat="todo in todos track by $index">
             <div class="wrap">
 
-                
+                <input id="done-check" type="checkbox" value={{todo.isDone}}>
                 <h2>{{todo.name}}</h2>
-                <span class="project-label"><h3><i class="fa fa-folder fa-fw"></i>{{todo.project}}</h3></span>
-                <h3><i class="fa fa-book fa-fw"></i>{{todo.date}}</h3>
-                <h3><i class="fa fa-book fa-fw"></i>Done? <input id="done-check" type="checkbox" value={{todo.isDone}}></h3>
-                <h3><i class="fa fa-book fa-fw"></i>Priority: {{todo.priority}}</h3>
+                <h3><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
+                <h3><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
+                <h3><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
 
                 <span class="input-group-btn">
                   <button class="btn btn-danger" ng-click="editTodo($index)" aria-label="Edit">Edit</button>

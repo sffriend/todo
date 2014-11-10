@@ -196,17 +196,17 @@ li:not(.logo):hover {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003140}}
-.low {
+.LOW {
   background-color: #66BDCC;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003144}}
-.medium {
+.MEDIUM {
   background-color: #FFE45A;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003148}}
-.high {
+.HIGH {
   background-color: #FF7977;
 }
 
