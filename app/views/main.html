@@ -1,12 +1,7 @@
-<script>
-    window.onLoad = initTodos();
-</script>
-
-
 <div class="container">
 
     <!-- Todos input -->
-    <div ng-show="show" class="add-todo">
+    <div ng-show="show" class="add-todo" id="add-todo">
         <div>
             <label>Name</label>
             <input type="text" ng-model="name" placeholder="Add a task">
@@ -25,7 +20,7 @@
         <div>
             <label>Priority</label>
             <br>
-            <input type="radio" name="priority" value="NONE" ng-model="priority">None<br>
+            <input type="radio" name="priority" value="NONE" ng-model="priority" ng-checked="true">None<br>
             <input type="radio" name="priority" value="LOW" ng-model="priority">Low<br>
             <input type="radio" name="priority" value="MEDIUM" ng-model="priority">Medium<br>
             <input type="radio" name="priority" value="HIGH" ng-model="priority">High<br>
