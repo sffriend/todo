@@ -28,7 +28,7 @@
         <div>
             <label>Priority</label>
             <br>
-            <input type="radio" name="priority" value="NONE" ng-model="priority" ng-checked="true">None<br>
+            <input type="radio" name="priority" value="MEDIUM" ng-model="priority" ng-checked="true">Auto<br>
             <input type="radio" name="priority" value="LOW" ng-model="priority">Low<br>
             <input type="radio" name="priority" value="MEDIUM" ng-model="priority">Medium<br>
             <input type="radio" name="priority" value="HIGH" ng-model="priority">High<br>
@@ -45,13 +45,19 @@
             <div class="wrap">
 
                 <input id="done-check" type="checkbox" value={{todo.isDone}}>
-                <h2>{{todo.name}}</h2>
-                <h3><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
-                <h3><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
-                <h3><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
+                
+                <h2 ng-hide="edit">{{todo.name}}</h2>
+                <input ng-show="edit" type="text" ng-model="todo.name" placeholder="Add a task">
+
+                <h3 ng-hide="edit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
+                <input ng-show="edit" type="text" ng-model="todo.project" placeholder="Add to a project">
+                <h3 ng-hide="edit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
+                <input ng-show="edit" type="text" placeholder="mm/dd/yy" ng-model="todo.date">
+                <h3 ng-hide="edit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
 
                 <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-click="editTodo($index)" aria-label="Edit">Edit</button>
+                  <button class="btn btn-danger" ng-hide="edit" ng-click="edit=true" aria-label="Edit">Edit</button>
+                  <button class="btn btn-danger" ng-show="edit" ng-click="edit=false; editTodo($index)" aria-label="Edit">Save</button>
                 </span>
                 <span class="input-group-btn">
                   <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>

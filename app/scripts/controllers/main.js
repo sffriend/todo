@@ -24,7 +24,7 @@ var todo = function(name, project, date, priority, isDone) {
  * @type {{NONE: string, LOW: string, MEDIUM: string, HIGH: string}}
  */
 var priorityEnum = {
-    NONE : 'none',
+    AUTO : 'medium',
     LOW : 'low',
     medium : 'medium',
     HIGH : 'high'
@@ -48,12 +48,10 @@ angular.module('todoApp')
     $scope.addTodo = function () {
       var date = convertDate($scope.date);
       var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
-      //colorPriority($scope);
       $scope.todos.push(newTodo);
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
       clearInput($scope);
-      //$('#add-todo').addClass('ng-hide');
     };
 
     // removing a task
@@ -62,6 +60,14 @@ angular.module('todoApp')
       // overwrite the tasks saved in cookies
       $cookies.todos = JSON.stringify($scope.todos);
     };
+
+     // removing a task
+    $scope.editTodo = function (index) {
+        // overwrite the tasks saved in cookies
+      $cookies.todos = JSON.stringify($scope.todos);
+    };
+
+
 
   });
 
@@ -74,6 +80,9 @@ function convertDate() {
     return null;
 }
 
+function createPriority() {
+  return 'MEDIUM';
+}
 
 /**
  * Clears the input fields
@@ -85,18 +94,6 @@ function clearInput($scope) {
     $scope.date = '';
     $scope.project = '';
     $(this).closest('.add-todo').hide();
-}
-
-function colorPriority($scope) {
-  if ($scope.priority === "LOW") {
-    $(".circle").addClass('low');
-  }
-  else if ($scope.priority === "HIGH") {
-    $(".circle").addClass('high');
-  }
-  else {
-    $(".circle").addClass('medium');
-  }
 }
 
 
