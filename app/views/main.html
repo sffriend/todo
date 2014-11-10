@@ -2,36 +2,38 @@
         <ul>
           <!-- Projects and Tasks -->
           <li class="logo"><h1>BubbleSnapp</h1></li>
-          <li class="projects-btn"><a href="">Tasks</a></li>
-          <li ng-click="addTask = true" class="add-task-btn"><a href="">+</a></li>
+          <!-- <li class="btn"><a href="">Tasks</a></li> -->
+          <li class="add-btn"><a ng-click="addTask = true" href="">Add Task</a></li>
         </ul>
       </div>
       <div class="container">
 
     <!-- Todos input -->
     <div ng-show="addTask" class="add-todo" id="add-todo">
+        <!-- <div class="task-label">
+            <h2>Add a Task to your To Do List</h2>
+        </div> -->
         <div>
-            <label>Name</label>
-            <input type="text" ng-model="name" placeholder="Add a task">
-        </div>
+            <label>Task Name</label>
+            <input type="text" ng-model="name" placeholder="">
+        </div><br>
 
          <div>
             <label>Project Name</label>
             <input type="text" ng-model="project" placeholder="Add to a project">
-        </div>
+        </div><br>
 
         <div>
             <label>Date</label>
             <input type="text" placeholder="mm/dd/yy" ng-model="date">
-        </div>
+        </div><br><br>
 
         <div>
-            <label>Priority</label>
-            <br>
-            <input type="radio" name="priority" value="MEDIUM" ng-model="priority" ng-checked="true">Auto<br>
-            <input type="radio" name="priority" value="LOW" ng-model="priority">Low<br>
-            <input type="radio" name="priority" value="MEDIUM" ng-model="priority">Medium<br>
-            <input type="radio" name="priority" value="HIGH" ng-model="priority">High<br>
+            <label class="priority">Priority</label>
+            <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority" ng-checked="true"><span>Auto</span><br></div>
+            <div><input type="radio" name="priority" value="LOW" ng-model="priority"><span>Low</span><br></div>
+            <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority"><span>Medium</span><br></div>
+            <div><input type="radio" name="priority" value="HIGH" ng-model="priority"><span>High</span><br></div>
         </div>
 
         <button ng-click="addTodo(); addTask = false">Add</button>
@@ -43,10 +45,8 @@
     <div class="circle-container">
         <div class="circle {{todo.priority}}" ng-class="" ng-repeat="todo in todos track by $index">
             <div class="wrap">
-
-                <input id="done-check" type="checkbox" value={{todo.isDone}}>
                 
-                <h2 ng-hide="edit">{{todo.name}}</h2>
+                <h2 class="name" ng-hide="edit">{{todo.name}}</h2>
                 <input ng-show="edit" type="text" ng-model="todo.name" placeholder="Add a task">
 
                 <h3 ng-hide="edit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>

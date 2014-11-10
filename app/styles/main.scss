@@ -6,7 +6,7 @@
 $font: 'Open Sans', sans-serif;
 $header-color: #FFF;
 $background-color: #000;
-$task-color: #F0F0F0;
+$task-color: #CDF284;
 $task-text: #FFFFFF;
 $high: #FF7977;
 $medium: #FFE45A;
@@ -21,8 +21,24 @@ body, html {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 200;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background: #000;
+  border: 0;
+  color: #FFF;
+
+  
+}
+
+button:hover {
+  background: #FFF;
+  color: #000;
+  cursor: pointer;
 }
 
 /* Header */
@@ -46,24 +62,36 @@ h1 {
   }
 
     a {
-      color: $task-text;
       text-decoration: none;
       font-size: 1.2em;
-      font-weight: 600;
+      font-weight: 400;
     }
   }
   
  
 }
 
-  li:not(.logo) {
-    background-color: $task-color;
-  }
+label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
 
-  li:not(.logo):hover {
-    background-color: $task-color;
-  }
+input, span {
+  margin: 0;
+  float: right;
+}
 
+input[type="radio"] {
+  margin: 5px;
+  height: auto;
+  float: right;
+}
+
+.task-label {
+  background-color: #FFF;
+  height: 50px;
+  width: 100%;
+}
 
 // tried to make the half circle add button ---- doesn't work yet
 .add-todo-circle {
@@ -92,18 +120,59 @@ h1 {
   }
 }
 
+.add-btn {
+  background: $task-color;
+  
+  float: right;
+
+  a {
+    color: #000;
+  }
+}
+
+.name {
+  font-size: 1.6em;
+  margin: 0 5px 20px;
+}
+
+h3 {
+  margin: 8px;
+}
+
+.add-btn:hover {
+  background: #000;
+}
+
+.add-btn a:hover {
+  color: #FFF;
+}
+
 .add-todo {
-  background-color: #FFF;
+  background-color: #CDF284;
   margin: 5% auto;
   padding: 1%;
   position: absolute;
   top: 100px;
-  width: 300px;
+  width: 340px;
   z-index: 2;
 
   div, button {
     margin: 3%;
   }
+}
+
+.input-group-btn {
+  float: none;
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  font-size: 1em;
+}
+
+.priority {
+  float:left;
 }
 
 /* Circle Animation */
@@ -116,8 +185,9 @@ h1 {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
+  padding: 15px;
   margin: 4%;
 
   &>.wrap {
