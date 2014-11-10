@@ -1,7 +1,15 @@
-<div class="container">
+  <div class="header">
+        <ul>
+          <!-- Projects and Tasks -->
+          <li class="logo"><h1>BubbleSnapp</h1></li>
+          <li class="projects-btn"><a href="">Tasks</a></li>
+          <li ng-click="addTask = true" class="add-task-btn"><a href="">+</a></li>
+        </ul>
+      </div>
+      <div class="container">
 
     <!-- Todos input -->
-    <div ng-show="show" class="add-todo" id="add-todo">
+    <div ng-show="addTask" class="add-todo" id="add-todo">
         <div>
             <label>Name</label>
             <input type="text" ng-model="name" placeholder="Add a task">
@@ -26,8 +34,8 @@
             <input type="radio" name="priority" value="HIGH" ng-model="priority">High<br>
         </div>
 
-        <button ng-click="addTodo()">Add</button>
-        <button ng-click="destroy()">Cancel</button>
+        <button ng-click="addTodo(); addTask = false">Add</button>
+        <button ng-click="addTask = false">Cancel</button>
     </div>
 
 
@@ -48,6 +56,8 @@
                 <span class="input-group-btn">
                   <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
                 </span>
+
+
             </div>
         
     </div>

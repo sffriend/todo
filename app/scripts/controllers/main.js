@@ -53,7 +53,7 @@ angular.module('todoApp')
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
       clearInput($scope);
-      $('#add-todo').addClass('ng-hide');
+      //$('#add-todo').addClass('ng-hide');
     };
 
     // removing a task
