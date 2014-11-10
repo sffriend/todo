@@ -24,9 +24,9 @@ var todo = function(name, project, date, priority, isDone) {
  * @type {{NONE: string, LOW: string, MEDIUM: string, HIGH: string}}
  */
 var priorityEnum = {
-    AUTO : 'medium',
+    AUTO : 'auto',
     LOW : 'low',
-    medium : 'medium',
+    MEDIUM : 'medium',
     HIGH : 'high'
 }
 
@@ -35,6 +35,8 @@ angular.module('todoApp')
   .controller('MainCtrl', function ($scope, $cookies) {
 
     $scope.todos = [];
+
+    $scope.date = "None";
 
     // if todos exist in cookies, add them to the page
     if($cookies != undefined && $cookies.todos != undefined) {
@@ -46,7 +48,23 @@ angular.module('todoApp')
 
     // adding a task
     $scope.addTodo = function () {
-      var date = convertDate($scope.date);
+      console.log($scope.priority);
+      var date = "'" + $scope.date + "'";
+      if (($scope.priority !== 'HIGH') && ($scope.priority !== 'MEDIUM') && ($scope.priority !== 'LOW')){
+        var time = Math.abs((new Date() - new Date($scope.date))/1.157e8);
+        console.log(time);
+        if (time < 5) {
+          
+          $scope.priority = "HIGH";
+        }
+        else if (time < 20) {
+          $scope.priority = "MEDIUM";
+        }
+        else {
+          $scope.priority = "LOW";
+        }
+      }
+
       var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
       $scope.todos.push(newTodo);
       //create a cookie for todos
@@ -77,8 +95,7 @@ angular.module('todoApp')
  * @returns {Date}
  */
 function convertDate() {
-    return null;
-}
+return null;}
 
 function createPriority() {
   return 'MEDIUM';
@@ -93,8 +110,27 @@ function clearInput($scope) {
     $scope.description = '';
     $scope.date = '';
     $scope.project = '';
+    $scope.priority = 'AUTO';
     $(this).closest('.add-todo').hide();
 }
+
+angular.module('todoApp').directive('datepicker', function() {
+    return {
+        restrict: 'A',
+        require : 'ngModel',
+        link : function (scope, element, attrs, ngModelCtrl) {
+            $(function(){
+                element.datepicker({
+                    dateFormat:'mm/dd/yy',
+                    onSelect:function (date) {
+                        ngModelCtrl.$setViewValue(date);
+                        scope.$apply();
+                    }
+                });
+            });
+        }
+    }
+});
 
 
 

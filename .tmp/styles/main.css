@@ -183,34 +183,29 @@ input[type="radio"] {
 .add-btn {
   background: #CDF284;
   float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003128}}
-.add-btn a {
   color: #000;
+  font-weight: 400;
+  font-size: 1.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .name {
   font-size: 1.6em;
   margin: 0 5px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003139}}
 h3 {
   margin: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003143}}
 .add-btn:hover {
   background: #000;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003146}}
-.add-btn a:hover {
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003148}}
 .add-todo {
   background-color: #CDF284;
   margin: 5% auto;
@@ -220,30 +215,30 @@ h3 {
   width: 340px;
   z-index: 2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003157}}
 .add-todo div, .add-todo button {
   margin: 3%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003162}}
 .input-group-btn {
   float: none;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003167}}
 input {
   height: 30px;
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003172}}
 .priority {
   float: left;
 }
 
 /* Circle Animation */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003178}}
 .circle {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -258,7 +253,7 @@ input {
   padding: 15px;
   margin: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003191}}
 .circle > .wrap {
   position: relative;
   top: 20%;
@@ -266,39 +261,39 @@ input {
   margin: 0 auto;
   width: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003198}}
 .circle > .wrap h3 {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003203}}
 .circle input {
   font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003209}}
 .LOW {
   background-color: #66BDCC;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003213}}
 .MEDIUM {
   background-color: #FFE45A;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003217}}
 .HIGH {
   background-color: #FF7977;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003223}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003221}}
 .circle-container {
   margin: 8% auto;
   width: 90%;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003227}}
 .project-label {
   color: #000;
   height: auto;
@@ -306,7 +301,7 @@ input {
   padding: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003235}}
 #done-check {
   float: left;
 }

@@ -3,7 +3,7 @@
           <!-- Projects and Tasks -->
           <li class="logo"><h1>BubbleSnapp</h1></li>
           <!-- <li class="btn"><a href="">Tasks</a></li> -->
-          <li class="add-btn"><a ng-click="addTask = true" href="">Add Task</a></li>
+          <a ng-click="addTask = true" href=""><li class="add-btn">Add Task</li></a>
         </ul>
       </div>
       <div class="container">
@@ -20,17 +20,17 @@
 
          <div>
             <label>Project Name</label>
-            <input type="text" ng-model="project" placeholder="Add to a project">
+            <input type="text" ng-model="project">
         </div><br>
 
         <div>
             <label>Date</label>
-            <input type="text" placeholder="mm/dd/yy" ng-model="date">
-        </div><br><br>
+            <input type="text" ng-model="date" datepicker>
+             </div><br><br>
 
         <div>
             <label class="priority">Priority</label>
-            <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority" ng-checked="true"><span>Auto</span><br></div>
+            <div><input type="radio" name="priority" value="AUTO" ng-model="priority" ng-checked="true"><span>Auto From Date</span><br></div>
             <div><input type="radio" name="priority" value="LOW" ng-model="priority"><span>Low</span><br></div>
             <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority"><span>Medium</span><br></div>
             <div><input type="radio" name="priority" value="HIGH" ng-model="priority"><span>High</span><br></div>
@@ -52,7 +52,7 @@
                 <h3 ng-hide="edit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
                 <input ng-show="edit" type="text" ng-model="todo.project" placeholder="Add to a project">
                 <h3 ng-hide="edit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
-                <input ng-show="edit" type="text" placeholder="mm/dd/yy" ng-model="todo.date">
+                <input ng-show="edit" type="text" ng-model="todo.date" datepicker>
                 <h3 ng-hide="edit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
 
                 <span class="input-group-btn">
