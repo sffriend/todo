@@ -4,11 +4,13 @@
 
 /* Variables */
 $font: 'Open Sans', sans-serif;
-$header-color: #000000;
-$background-color: #F0F0F0;
-$project-color: coral;
-$task-color: pink;
+$header-color: #FFF;
+$background-color: #000;
+$task-color: #F0F0F0;
 $task-text: #FFFFFF;
+$high: #FF7977;
+$medium: #FFE45A;
+$low: #66BDCC;
 
 /* Global Styles & Typography */
 body, html {
@@ -20,14 +22,14 @@ body, html {
 
 h1 {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 /* Header */
 .header {
   background-color: $header-color;
-  color: $task-text;
-  height: 50px;
+  color: #000;
+  font-weight: 200;
   padding: 1em;
   position: relative;
 
@@ -55,7 +57,7 @@ h1 {
 }
 
   li:not(.logo) {
-    background-color: $project-color;
+    background-color: $task-color;
   }
 
   li:not(.logo):hover {
@@ -67,7 +69,7 @@ h1 {
 .add-todo-circle {
   @include border-radius(50%);
   @include opacity(0.5);
-  background-color: $project-color;
+  background-color: $task-color;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -91,7 +93,7 @@ h1 {
 }
 
 .add-todo {
-  background-color: $project-color;
+  background-color: $task-color;
   margin: 5%;
   padding: 1%;
   position: absolute;
@@ -106,41 +108,61 @@ h1 {
 /* Circle Animation */
 
 .circle {
-  @include opacity(0.5);
   @include transform-origin(50%, 50%);
-  @include transition(all 0.5s);
   @include border-radius(50%);
-  background-color: $project-color;
-  width: 150px;
-  height: 150px;
+  background-color: $task-color;
   cursor: pointer;
-  margin: 10% auto;
-  display: block;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 200px;
+  height: 200px;
+  margin: 4%;
 
   &>.wrap {
     position: relative;
-    top: 40%;
+    top: 20%;
+    text-align: center;
     margin: 0 auto;
     width: 80%;
+
+    h3 {
+      text-align: left;
+    }
   }
 
   input {
     font-family: $font;
-    font-size: 0.8em;
-    width: 100%
+    width: 100%;
   }
 }
 
-.circle:hover {
-  @include opacity(1);
-  @include transform(scale(1.5));
-  width: 250px;
-  height: 250px;
-  margin: 15% auto;
-
-  input {
-    font-size: 1em;
-  }
+.low {
+  background-color: $low;
 }
 
+.medium {
+  background-color: $medium;
+}
 
+.high {
+  background-color: $high;
+}
+
+.circle-container {
+  margin: 8% auto;
+  width: 90%;
+  text-align: center;
+}
+
+.project-label {
+  //background-color: #FFF;
+  color: #000;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+}
+
+#done-check {
+  float: left;
+}

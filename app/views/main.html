@@ -9,17 +9,17 @@
     <div ng-show="show" class="add-todo">
         <div>
             <label>Name</label>
-            <input type="text" ng-model="name" placeholder="Add a todo" class="form-control">
+            <input type="text" ng-model="name" placeholder="Add a task">
         </div>
 
-        <div>
-            <label>Description</label>
-            <textarea name="description" ng-model="description" placeholder="Add a description"></textarea>
+         <div>
+            <label>Project Name</label>
+            <input type="text" ng-model="project" placeholder="Add to a project">
         </div>
 
         <div>
             <label>Date</label>
-            <input type="text" placeholder="MM/dd/yy" ng-model="date">
+            <input type="text" placeholder="mm/dd/yy" ng-model="date">
         </div>
 
         <div>
@@ -31,7 +31,6 @@
             <input type="radio" name="priority" value="HIGH" ng-model="priority">High<br>
         </div>
 
-
         <button ng-click="addTodo()">Add</button>
         <button ng-click="destroy()">Cancel</button>
     </div>
@@ -39,31 +38,25 @@
 
 
     <!-- Todos list -->
-    <div class="circle input-group" ng-repeat="todo in todos track by $index">
-        <div class="wrap">
+    <div class="circle-container">
+        <div class="circle" ng-repeat="todo in todos track by $index">
+            <div class="wrap">
 
-            <h1>{{todo.name}}</h1>
+                
+                <h2>{{todo.name}}</h2>
+                <span class="project-label"><h3><i class="fa fa-folder fa-fw"></i>{{todo.project}}</h3></span>
+                <h3><i class="fa fa-book fa-fw"></i>{{todo.date}}</h3>
+                <h3><i class="fa fa-book fa-fw"></i>Done? <input id="done-check" type="checkbox" value={{todo.isDone}}></h3>
+                <h3><i class="fa fa-book fa-fw"></i>Priority: {{todo.priority}}</h3>
 
-            <h2>{{todo.description}}</h2>
-
-            <span>{{todo.date}}</span>
-
-            <input type="checkbox" value={{todo.isDone}}>
-
-            <input type="radio" name="priority" value={{todo.priority}}>None<br>
-            <input type="radio" name="priority" value={{todo.priority}}>Low<br>
-            <input type="radio" name="priority" value={{todo.priority}}>Medium<br>
-            <input type="radio" name="priority" value={{todo.priority}}>High<br>
-
-
-    <span class="input-group-btn">
-      <button class="btn btn-danger" ng-click="editTodo($index)" aria-label="Edit">Edit</button>
-    </span>
-    <span class="input-group-btn">
-      <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-    </span>
-
-        </div>
+                <span class="input-group-btn">
+                  <button class="btn btn-danger" ng-click="editTodo($index)" aria-label="Edit">Edit</button>
+                </span>
+                <span class="input-group-btn">
+                  <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+                </span>
+            </div>
+        
     </div>
 
 </div>

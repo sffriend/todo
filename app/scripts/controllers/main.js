@@ -9,9 +9,9 @@
  * @param done [boolean] completed task
  * @param priority [
  */
-var todo = function(name, description, date, priority, isDone) {
+var todo = function(name, project, date, priority, isDone) {
     this.name = name;
-    this.description = description;
+    this.project = project;
     this.date = date;
     this.priority = priority;
     this.isDone = isDone;
@@ -47,7 +47,8 @@ angular.module('todoApp')
     // adding a task
     $scope.addTodo = function () {
       var date = convertDate($scope.date);
-      var newTodo = new todo($scope.name, $scope.description, date, priorityEnum.NONE, false);
+      var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
+      colorPriority($scope);
       $scope.todos.push(newTodo);
       //create a cookie for todos
       $cookies.todos = JSON.stringify($scope.todos);
@@ -81,7 +82,18 @@ function clearInput($scope) {
     $scope.name = '';
     $scope.description = '';
     $scope.date = '';
+}
 
+function colorPriority($scope) {
+  if ($scope.priority === "LOW") {
+    $(".circle").addClass('low');
+  }
+  else if ($scope.priority === "HIGH") {
+    $(".circle").addClass('high');
+  }
+  else {
+    $(".circle").addClass('medium');
+  }
 }
 
 /**

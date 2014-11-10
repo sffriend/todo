@@ -11,6 +11,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
@@ -28,8 +29,8 @@
           <!-- Projects and Tasks -->
           <li class="logo"><h1>BubbleSnapp</h1></li>
           <li class="projects-btn"><a href="">Projects</a></li>
-          <li ng-click="show=true" class="add-task-btn"><a href="">+</a></li>
           <li class="projects-btn"><a href="">Tasks</a></li>
+          <li ng-click="show=true" class="add-task-btn"><a href="">+</a></li>
         </ul>
       </div>
 
@@ -71,6 +72,8 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
