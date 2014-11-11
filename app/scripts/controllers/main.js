@@ -1,5 +1,6 @@
 'use strict';
 
+
 /**
  * Object to store the todos
  * @param name [String] of the task
@@ -16,6 +17,7 @@ var todo = function(name, project, date, priority, isDone) {
     this.isDone = isDone;
 };
 
+
 /**
  * Define priority of todo
  *
@@ -28,11 +30,11 @@ var priorityEnum = {
     HIGH : 'HIGH'
 }
 
+
 angular.module('todoApp')
   .controller('MainCtrl', function ($scope, $cookies) {
 
     $scope.todos = [];
-
     $scope.date = "None";
 
     // if todos exist in cookies, add them to the page
@@ -46,30 +48,33 @@ angular.module('todoApp')
     // adding a task
     $scope.addTodo = function () {
       console.log($scope.priority);
-      var date = "'" + $scope.date + "'";
-      if ($scope.priority == priorityEnum.AUTO){
-         var time = Math.abs((new Date() - new Date($scope.date))/1.157e8);
-         console.log(time);
-         if (time < 5) {
-            $scope.priority = "HIGH";
-         }
-         else if (time < 20) {
-            $scope.priority = "MEDIUM";
-         }
-         else {
-            $scope.priority = "LOW";
-         }
+
+      if ($scope.priority == priorityEnum.AUTO) {
+        var milToDays = 1.157e8
+        var time = Math.abs((new Date() - new Date($scope.date)) / milToDays);
+
+        if (time <= 5) {
+          $scope.priority = priorityEnum.HIGH;
+        }
+        else if (time > 5 && time <= 20) {
+          $scope.priority = priorityEnum.MEDIUM;
+        }
+        else if (time > 20) {
+          $scope.priority = priorityEnum.LOW;
+        }
       }
 
       var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
       $scope.todos.push(newTodo);
-      //create a cookie for todos
+      //reload cookies for todos
       $cookies.todos = JSON.stringify($scope.todos);
       clearInput($scope);
     };
 
     // removing a task
-    $scope.removeTodo = function (index) {
+    $scope.removeTodo = function (t, index) {
+        //t.addClass('remove');
+
       $scope.todos.splice(index, 1);
       // overwrite the tasks saved in cookies
       $cookies.todos = JSON.stringify($scope.todos);
