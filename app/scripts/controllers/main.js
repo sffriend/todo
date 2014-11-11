@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * Object to store the todos
  * @param name [String] of the task
@@ -17,19 +16,17 @@ var todo = function(name, project, date, priority, isDone) {
     this.isDone = isDone;
 };
 
-
 /**
  * Define priority of todo
  *
  * @type {{NONE: string, LOW: string, MEDIUM: string, HIGH: string}}
  */
 var priorityEnum = {
-    AUTO : 'auto',
-    LOW : 'low',
-    MEDIUM : 'medium',
-    HIGH : 'high'
+    AUTO : 'AUTO',
+    LOW : 'LOW',
+    MEDIUM : 'MEDIUM',
+    HIGH : 'HIGH'
 }
-
 
 angular.module('todoApp')
   .controller('MainCtrl', function ($scope, $cookies) {
@@ -50,19 +47,18 @@ angular.module('todoApp')
     $scope.addTodo = function () {
       console.log($scope.priority);
       var date = "'" + $scope.date + "'";
-      if (($scope.priority !== 'HIGH') && ($scope.priority !== 'MEDIUM') && ($scope.priority !== 'LOW')){
-        var time = Math.abs((new Date() - new Date($scope.date))/1.157e8);
-        console.log(time);
-        if (time < 5) {
-          
-          $scope.priority = "HIGH";
-        }
-        else if (time < 20) {
-          $scope.priority = "MEDIUM";
-        }
-        else {
-          $scope.priority = "LOW";
-        }
+      if ($scope.priority == priorityEnum.AUTO){
+         var time = Math.abs((new Date() - new Date($scope.date))/1.157e8);
+         console.log(time);
+         if (time < 5) {
+            $scope.priority = "HIGH";
+         }
+         else if (time < 20) {
+            $scope.priority = "MEDIUM";
+         }
+         else {
+            $scope.priority = "LOW";
+         }
       }
 
       var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
