@@ -276,24 +276,24 @@ input {
   background-color: #66BDCC;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003215}}
 .MEDIUM {
   background-color: #FFE45A;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003221}}
 .HIGH {
   background-color: #FF7977;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003227}}
 .circle-container {
   margin: 8% auto;
   width: 90%;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003233}}
 .project-label {
   color: #000;
   height: auto;
@@ -301,7 +301,7 @@ input {
   padding: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/brianfung\/Downloads\/14_2014Fall\/CPE486_Fisher-White\/PA\/todo\/app\/styles\/main\.scss}line{font-family:\00003241}}
 #done-check {
   float: left;
 }
