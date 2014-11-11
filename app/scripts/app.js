@@ -15,8 +15,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'ui.date' ])
+    'ngTouch' ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
