@@ -208,14 +208,20 @@ input {
 
 .LOW {
   background-color: $low;
+  // include this for size priority
+  //@include scale(0.75);
 }
 
 .MEDIUM {
   background-color: $medium;
+  // include this for size priority
+  // @include scale(1);
 }
 
 .HIGH {
   background-color: $high;
+  // include this for size priority
+  //@include scale(1.25);
 }
 
 .circle-container {
