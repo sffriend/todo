@@ -11,3 +11,6 @@ node_modules
 tmp
 .tmp/*
 .npm-debug.log
+
+#this will be auto compiled with grunt
+app/styles/main.css
