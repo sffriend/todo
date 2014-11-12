@@ -65,6 +65,7 @@ angular.module('todoApp')
         }
       }
 
+      saveProject($scope.project);
       var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
       $scope.todos.push(newTodo);
       //create a cookie for todos
@@ -85,10 +86,11 @@ angular.module('todoApp')
       $cookies.todos = JSON.stringify($scope.todos);
     };
 
-
-
   });
 
+function saveProject(project) {
+  $(".projet").append("<option>" + project + "</option>");
+}
 
 /**
  *

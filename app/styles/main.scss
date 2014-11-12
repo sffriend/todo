@@ -167,6 +167,7 @@ h3 {
 input {
   height: 30px;
   font-size: 1em;
+  clear:  both;
 }
 
 .priority {
@@ -216,6 +217,14 @@ input {
 
 .HIGH {
   background-color: $high;
+}
+
+select {
+  background-color: #FFF;
+  clear: both;
+  float:right;
+  height: 30px;
+  margin: 5px 0;
 }
 
 .circle-container {
