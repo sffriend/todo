@@ -1,5 +1,5 @@
 /* Compass Imports */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,52 +21,52 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
 html {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
 q, blockquote {
   quotes: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
 a img {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/\.rvm\/gems\/ruby-2\.1\.2\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* Variables */
 /* Global Styles & Typography */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000316}}
 body, html {
   margin: 0;
   padding: 0;
@@ -74,13 +74,13 @@ body, html {
   background-color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000323}}
 h1 {
   font-size: 1.8em;
   font-weight: 200;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000328}}
 button {
   padding: 10px;
   margin: 5px;
@@ -89,7 +89,7 @@ button {
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000337}}
 button:hover {
   background: #FFF;
   color: #000;
@@ -97,7 +97,7 @@ button:hover {
 }
 
 /* Header */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000344}}
 .header {
   background-color: #FFF;
   color: #000;
@@ -105,52 +105,52 @@ button:hover {
   padding: 1em;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000351}}
 .header li {
   display: inline-block;
   margin: 0 3%;
   padding: 1em 5%;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000357}}
 .header li.add-task-btn {
   margin: 0;
   padding: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000362}}
 .header li a {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 400;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000371}}
 label {
   font-size: 1.2em;
   font-weight: 600;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000376}}
 input, span {
   margin: 0;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000381}}
 input[type="radio"] {
   margin: 5px;
   height: auto;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000387}}
 .task-label {
   background-color: #FFF;
   height: 50px;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000394}}
 .add-todo-circle {
   border-radius: 50%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -164,14 +164,14 @@ input[type="radio"] {
   width: 150px;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003106}}
 .add-todo-circle a {
   color: #FFFFFF;
   font-size: 1.2em;
   font-weight: 600;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003113}}
 .add-todo-circle:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -179,7 +179,7 @@ input[type="radio"] {
   z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003120}}
 .add-btn {
   background: #CDF284;
   float: right;
@@ -188,24 +188,24 @@ input[type="radio"] {
   font-size: 1.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003129}}
 .name {
   font-size: 1.6em;
   margin: 0 5px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003134}}
 h3 {
   margin: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003138}}
 .add-btn:hover {
   background: #000;
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003143}}
 .add-todo {
   background-color: #CDF284;
   margin: 5% auto;
@@ -215,39 +215,31 @@ h3 {
   width: 340px;
   z-index: 2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003152}}
 .add-todo div, .add-todo button {
   margin: 3%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003157}}
 .input-group-btn {
   float: none;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003162}}
 input {
   height: 30px;
   font-size: 1em;
   clear: both;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003173}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003172}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003168}}
 .priority {
   float: left;
 }
 
 /* Circle Animation */
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003179}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003178}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003174}}
 .circle {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -262,11 +254,7 @@ input {
   padding: 15px;
   margin: 4%;
 }
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003192}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003191}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003187}}
 .circle > .wrap {
   position: relative;
   top: 20%;
@@ -274,53 +262,32 @@ input {
   margin: 0 auto;
   width: 80%;
 }
-<<<<<<< HEAD
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003194}}
+.circle > .wrap h3 {
+  text-align: left;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003199}}
-.circle > .wrap h3 {
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003204}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003198}}
-.circle > .wrap h3 {
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003203}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
 .circle input {
   font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003210}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003209}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003205}}
 .LOW {
   background-color: #66BDCC;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003214}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003215}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003211}}
 .MEDIUM {
   background-color: #FFE45A;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003218}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003221}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003217}}
 .HIGH {
   background-color: #FF7977;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003223}}
 select {
   background-color: #FFF;
   clear: both;
@@ -329,21 +296,14 @@ select {
   margin: 5px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003230}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003227}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003231}}
 .circle-container {
   margin: 8% auto;
   width: 90%;
   text-align: center;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003236}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003233}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003237}}
 .project-label {
   color: #000;
   height: auto;
@@ -351,16 +311,12 @@ select {
   padding: 5px;
 }
 
-<<<<<<< HEAD
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003244}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003241}}
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003245}}
 #done-check {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/carllindiii\/Google\%20Drive\/Fall\%202014\/CSC\%20486\/todo\/app\/styles\/main\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003249}}
 .remove {
   -webkit-transform: scale(0);
   transform: scale(0);

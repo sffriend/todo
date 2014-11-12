@@ -12,33 +12,6 @@
 
    <!-- Todos input -->
    <div ng-show="addTask" class="add-todo" id="add-todo">
-      <!-- <div class="task-label">
-          <h2>Add a Task to your To Do List</h2>
-      </div> -->
-      <div>
-         <label>Task Name</label>
-         <input type="text" ng-model="name" placeholder="">
-      </div>
-      <br>
-
-      <div>
-         <label>Project Name</label>
-         <input type="text" ng-model="project">
-      </div>
-      <br>
-
-      <div>
-         <label>Date</label>
-         <input type="text" ng-model="date" datepicker>
-      </div>
-<<<<<<< HEAD
-      <div class="container">
-
-    <!-- Todos input -->
-    <div ng-show="addTask" class="add-todo" id="add-todo">
-        <!-- <div class="task-label">
-            <h2>Add a Task to your To Do List</h2>
-        </div> -->
         <div>
             <label>Task Name</label>
             <input type="text" ng-model="name" placeholder="">
@@ -55,35 +28,6 @@
             <label>Date</label>
             <input type="text" ng-model="date" datepicker>
              </div><br><br>
-
-        <div>
-            <label class="priority">Priority</label>
-            <div><input type="radio" name="priority" value="AUTO" ng-model="priority" ng-checked="true"><span>Auto From Date</span><br></div>
-            <div><input type="radio" name="priority" value="LOW" ng-model="priority"><span>Low</span><br></div>
-            <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority"><span>Medium</span><br></div>
-            <div><input type="radio" name="priority" value="HIGH" ng-model="priority"><span>High</span><br></div>
-        </div>
-
-        <button ng-click="addTodo(); addTask = false">Add</button>
-        <button ng-click="addTask = false">Cancel</button>
-    </div>
-
-
-    <!-- Todos list -->
-    <div class="circle-container">
-        <div class="circle {{todo.priority}}" ng-class="" ng-repeat="todo in todos track by $index">
-            <div class="wrap">
-                
-                <h2 class="name" ng-hide="edit">{{todo.name}}</h2>
-                <input ng-show="edit" type="text" ng-model="todo.name" placeholder="Add a task">
-
-                <h3 ng-hide="edit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
-                <input ng-show="edit" type="text" ng-model="todo.project" placeholder="Add to a project">
-                <h3 ng-hide="edit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
-                <input ng-show="edit" type="text" ng-model="todo.date" datepicker>
-                <h3 ng-hide="edit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
-=======
-      <br><br>
 
       <div>
          <label class="priority">Priority</label>
@@ -115,7 +59,6 @@
             <input ng-show="edit" type="text" ng-model="todo.date" datepicker>
 
             <h3 ng-hide="edit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
 
                 <span class="input-group-btn">
                   <button class="btn btn-danger" ng-hide="edit" ng-click="edit=true" aria-label="Edit">Edit</button>

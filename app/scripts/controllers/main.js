@@ -45,18 +45,10 @@ angular.module('todoApp')
          }
       }
 
-<<<<<<< HEAD
-      saveProject($scope.project);
-      var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
-      $scope.todos.push(newTodo);
-      //create a cookie for todos
-      $cookies.todos = JSON.stringify($scope.todos);
-      clearInput($scope);
-    };
-=======
       // adding a task
       $scope.addTodo = function () {
          console.log($scope.priority);
+            saveProject($scope.project);
 
          if ($scope.priority == priorityEnum.AUTO) {
             var milToDays = 1.157e8
@@ -72,7 +64,6 @@ angular.module('todoApp')
                $scope.priority = priorityEnum.LOW;
             }
          }
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
 
          var newTodo = new todo($scope.name, $scope.project, $scope.date, $scope.priority, false);
          $scope.todos.push(newTodo);
@@ -85,9 +76,6 @@ angular.module('todoApp')
       $scope.removeTodo = function (t, index) {
          //t.addClass('remove');
 
-<<<<<<< HEAD
-  });
-=======
          $scope.todos.splice(index, 1);
          // overwrite the tasks saved in cookies
          $cookies.todos = JSON.stringify($scope.todos);
@@ -101,7 +89,6 @@ angular.module('todoApp')
 
 
    });
->>>>>>> 0dfb4bb02d41bc73bede7bf8cf310a928cfe9a6c
 
 function saveProject(project) {
   $(".projet").append("<option>" + project + "</option>");
