@@ -1,0 +1,57 @@
+<div class="header">
+   <ul>
+      <!-- Projects and Tasks -->
+      <li class="logo"><h1>BubbleSnapp</h1></li>
+      <!-- <li class="btn"><a href="">Tasks</a></li> -->
+      <a href="../" href="">
+         <li class="add-btn">Tasks</li>
+      </a>
+      <a ng-click="addTask = true">
+         <li class="add-btn">Add Task</li>
+      </a>
+   </ul>
+</div>
+<div class="container">
+
+  <div ng-show="addTask" class="add-todo" id="add-todo">
+        <div>
+            <label>Task Name</label>
+            <input type="text" ng-model="name" placeholder="Math">
+        </div><br>
+
+         <div>
+            <label>Project Name</label>
+            <input type="text" placeholder="School" ng-model="project">
+            <select class="projet" ng-model="project">
+            </select>
+        </div><br>
+
+        <div>
+            <label>Description</label>
+            <input type="text" ng-model="description" placeholder="Optional">
+        </div>
+
+        <div>
+            <label>Date</label>
+            <input id="date-input" type="text" ng-model="date" placeholder="Optional" datepicker>
+             </div><br><br>
+
+      <div>
+         <label class="priority">Priority</label>
+
+         <div><input type="radio" name="priority" value="AUTO" ng-model="priority" ng-checked="true"><span>Auto From Date</span><br>
+         </div>
+         <div><input type="radio" name="priority" value="LOW" ng-model="priority"><span>Low</span><br></div>
+         <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority"><span>Medium</span><br></div>
+         <div><input type="radio" name="priority" value="HIGH" ng-model="priority"><span>High</span><br></div>
+      </div>
+
+      <button ng-click="addTodo(); addTask=false">Add</button>
+      <button ng-click="addTask=false">Cancel</button>
+   </div>
+
+
+   <div class="circle" ng-class="" ng-repeat="project in projects">
+      <h2 style="color: #FFF">it is {{project.name}}</h2>
+   </div>
+</div>
