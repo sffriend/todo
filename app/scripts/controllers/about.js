@@ -8,10 +8,12 @@
  * Controller of the todoApp
  */
 angular.module('todoApp')
-   .controller('TasksCtrl', function ($scope) {
-      $scope.awesomeThings = [
-         'HTML5 Boilerplate',
-         'AngularJS',
-         'Karma'
-      ];
+   .controller('ProjectCtrl', function ($scope) {
+      var project = function(name) {
+      	this.name = name;
+      }
+
+      $scope.projects = [];
+      var thisProject = new project("steph");
+      $scope.projects.push(thisProject);
    });

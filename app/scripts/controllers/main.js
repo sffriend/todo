@@ -48,8 +48,7 @@ angular.module('todoApp')
 
       // adding a task
       $scope.addTodo = function () {
-         console.log($scope.priority);
-            saveProject($scope.project);
+         saveProject($scope.project);
 
          if ($scope.priority == priorityEnum.AUTO) {
             var milToDays = 1.157e8
@@ -68,6 +67,8 @@ angular.module('todoApp')
 
          var newTodo = new todo($scope.name, $scope.project, $scope.description, $scope.date, $scope.priority, false, false);
          $scope.todos.unshift(newTodo);
+         // var newProject = new project($scope.project);
+         // $scope.projects.push(newProject);
          //reload cookies for todos
          $cookies.todos = JSON.stringify($scope.todos);
          clearInput($scope);
