@@ -186,7 +186,7 @@ input {
 
   & > .wrap {
     position: relative;
-    top: 20%;
+    top: 15%;
     text-align: center;
     margin: 0 auto;
     width: 80%;
@@ -200,6 +200,11 @@ input {
     font-family: $font;
     width: 100%;
   }
+}
+
+.done {
+  background-color: darkgrey;
+  @include opacity(0.5);
 }
 
 .LOW {
