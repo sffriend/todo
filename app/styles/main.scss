@@ -5,12 +5,14 @@
 /* Variables */
 $font: 'Open Sans', sans-serif;
 $header-color: #FFF;
-$background-color: #000;
-$task-color: #CDF284;
+$background-color: #F6F7F4;
+$task-color: #C0C2BF;
 $task-text: #FFFFFF;
-$high: #FF7977;
-$medium: #FFE45A;
-$low: #66BDCC;
+$task-text-r: #000000;
+$high: #274C59;
+$medium: #5FBAD9;
+$low: #A4D0DF;
+@include global-reset;
 
 /* Global Styles & Typography */
 body, html {
@@ -18,35 +20,40 @@ body, html {
   padding: 0;
   font-family: $font;
   background-color: $background-color;
+  @include global-reset;
 }
 
-h1 {
-  font-size: 1.8em;
+li h1 {
+  font-size: 1.5em;
   font-weight: 200;
 }
 
 button {
   padding: 10px;
   margin: 5px;
-  background: #000;
+  background: $task-text-r;
   border: 0;
-  color: #FFF;
+  color: $task-text;
 
 }
 
 button:hover {
-  background: #FFF;
-  color: #000;
+  background: $task-text;
+  color: $task-text-r;
   cursor: pointer;
 }
 
 /* Header */
 .header {
   background-color: $header-color;
-  color: #000;
+  color: $task-text-r;
   font-weight: 200;
   padding: 1em;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  z-index: 3;
 
   li {
     display: inline-block;
@@ -84,8 +91,12 @@ input[type="radio"] {
   float: right;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .task-label {
-  background-color: #FFF;
+  background-color: $task-text;
   height: 50px;
   width: 100%;
 }
@@ -119,11 +130,11 @@ input[type="radio"] {
 
 .add-btn {
   background: $task-color;
-
   float: right;
-  color: #000;
+  color: $task-text;
   font-weight: 400;
   font-size: 1.5;
+  cursor: pointer;
 }
 
 .name {
@@ -136,12 +147,13 @@ h3 {
 }
 
 .add-btn:hover {
-  background: #000;
-  color: #FFF;
+  background: $task-text-r;
+  color: $task-text;
 }
 
 .add-todo {
-  background-color: #CDF284;
+  background-color: $task-color;
+  color: $task-text-r;
   margin: 5% auto;
   padding: 1%;
   position: absolute;
@@ -203,7 +215,7 @@ input {
 }
 
 .done {
-  background-color: darkgrey;
+  background-color: $task-color;
   @include opacity(0.5);
 }
 
@@ -226,7 +238,7 @@ input {
 }
 
 select {
-  background-color: #FFF;
+  background-color: $task-text;
   clear: both;
   float:right;
   height: 30px;
@@ -241,7 +253,7 @@ select {
 
 .project-label {
   //background-color: #FFF;
-  color: #000;
+  color: $task-text-r;
   height: auto;
   width: 100%;
   padding: 5px;

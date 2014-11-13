@@ -16,7 +16,7 @@ var todo = function (name, project, description, date, priority, isDone, edit) {
    this.date = date;
    this.priority = priority;
    this.isDone = false;
-   this.edit = edit;
+   this.edit = false;
 };
 
 
@@ -85,14 +85,14 @@ angular.module('todoApp')
 
       // removing a task
       $scope.editTodo = function (index) {
+         console.log($scope.todos[index]);
+         $scope.todos[index].edit = !$scope.todos[index].edit;
          // overwrite the tasks saved in cookies
-         $scope.edit = !$scope.edit;
          $cookies.todos = JSON.stringify($scope.todos);
       };
 
       $scope.completeTodo = function(index) {
-         $scope.isDone = !$scope.isDone;
-         $(".circle").toggleClass("done");
+         $scope.todos[index].isDone = !$scope.todos[index].isDone;
       }
 
 
@@ -112,6 +112,14 @@ function convertDate() {
 
 function createPriority() {
    return 'MEDIUM';
+}
+var addTask = false;
+
+function addTaskk($scope) {
+   console.log(addTask);
+   addTask = !addTask;
+   $scope.addTask = addTask;
+   console.log(addTask);
 }
 
 /**
