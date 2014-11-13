@@ -3,9 +3,9 @@
       <!-- Projects and Tasks -->
       <li class="logo"><h1>BubbleSnapp</h1></li>
       <!-- <li class="btn"><a href="">Tasks</a></li> -->
-<!--       <a href="#/projects" href="">
-         <li class="add-btn">Projects</li>
-      </a> -->
+      <!--       <a href="#/projects" href="">
+               <li class="add-btn">Projects</li>
+            </a> -->
       <a ng-click="addTask = true">
          <li class="add-btn">Add Task</li>
       </a>
@@ -13,30 +13,32 @@
 </div>
 
 <div class="container">
-
    <!-- Todos input -->
    <div ng-show="addTask" class="add-todo" id="add-todo">
-        <div>
-            <label>Task Name</label>
-            <input type="text" ng-model="name" placeholder="Math">
-        </div><br>
+      <div>
+         <label>Task Name</label>
+         <input type="text" ng-model="name" placeholder="Math">
+      </div>
+      <br>
 
-         <div>
-            <label>Project Name</label>
-            <input type="text" placeholder="School" ng-model="project">
-            <select class="projet" ng-model="project">
-            </select>
-        </div><br>
+      <div>
+         <label>Project Name</label>
+         <input type="text" placeholder="School" ng-model="project">
+         <select class="projet" ng-model="project">
+         </select>
+      </div>
+      <br>
 
-        <div>
-            <label>Description</label>
-            <input type="text" ng-model="description" placeholder="Optional">
-        </div>
+      <div>
+         <label>Description</label>
+         <input type="text" ng-model="description" placeholder="Optional">
+      </div>
 
-        <div>
-            <label>Date</label>
-            <input id="date-input" type="text" ng-model="date" placeholder="Optional" datepicker>
-             </div><br><br>
+      <div>
+         <label>Date</label>
+         <input id="date-input" type="text" ng-model="date" placeholder="Optional" datepicker>
+      </div>
+      <br><br>
 
       <div>
          <label class="priority">Priority</label>
@@ -57,9 +59,13 @@
    <div class="circle-container">
       <div class="circle {{todo.priority}}" ng-class="{'done' : todo.isDone}" ng-repeat="todo in todos track by $index">
          <div class="wrap">
-            
-            <div ng-hide="todo.edit"><button ng-hide="todo.isDone" class="btn btn-danger" ng-click="completeTodo($index)" aria-label="Remove"><i class="fa fa-2x fa-check-circle"></i></button>
-             <button ng-show="todo.isDone" class="btn btn-danger" ng-click="completeTodo($index)" aria-label="Remove"><i class="fa fa-2x fa-undo"></i></button></div>
+
+            <div ng-hide="todo.edit">
+               <button ng-hide="todo.isDone" class="btn btn-danger" ng-click="completeTodo($index)" aria-label="Remove">
+                  <i class="fa fa-2x fa-check-circle"></i></button>
+               <button ng-show="todo.isDone" class="btn btn-danger" ng-click="completeTodo($index)" aria-label="Remove">
+                  <i class="fa fa-2x fa-undo"></i></button>
+            </div>
             <h2 class="name" ng-hide="todo.edit">{{todo.name}}</h2>
             <input ng-show="todo.edit" type="text" ng-model="todo.name" placeholder="Add a task">
 
@@ -72,16 +78,16 @@
             <h3 ng-hide="todo.edit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
 
                 <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="editTodo($index)" aria-label="Edit"><i class="fa fa-2x fa-wrench"></i></button>
-                  <button class="btn btn-danger" ng-show="todo.edit" ng-click="editTodo($index)" aria-label="Edit"><i class="fa fa-2x fa-check"></i></button>
+                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="editTodo($index)" aria-label="Edit">
+                     <i class="fa fa-2x fa-wrench"></i></button>
+                  <button class="btn btn-danger" ng-show="todo.edit" ng-click="editTodo($index)" aria-label="Edit">
+                     <i class="fa fa-2x fa-check"></i></button>
                 </span>
                 <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="removeTodo(this, $index)" aria-label="Remove"><i class="fa fa-2x fa-trash"></i></button>
+                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="removeTodo(this, $index)" aria-label="Remove">
+                     <i class="fa fa-2x fa-trash"></i></button>
                 </span>
-
-
          </div>
-
       </div>
-
    </div>
+</div>
