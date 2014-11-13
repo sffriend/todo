@@ -77,13 +77,15 @@
             <h2 class="name" ng-hide="todo.isEdit">{{todo.name}}</h2>
             <input ng-show="todo.isEdit" type="text" ng-model="todo.name" placeholder="Change task name">
 
-            <h3 ng-hide="todo.isEdit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
-            <input ng-show="todo.isEdit" type="text" ng-model="todo.project" placeholder="Change project">
+           <ul class="fa-ul">
+            <li ng-hide="todo.isEdit"><i class="fa fa-li fa-lg fa-folder"></i>&nbsp; {{todo.project}}</li>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.project" placeholder="Add to a project">
 
-            <h3 ng-hide="todo.isEdit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
+            <li ng-hide="todo.isEdit"><i class="fa fa-li fa-lg fa-calendar-o"></i>&nbsp; {{todo.date}}</li>
             <input ng-show="todo.isEdit" type="text" ng-model="todo.date" datepicker>
 
-            <h3 ng-hide="todo.isEdit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
+            <li ng-hide="todo.isEdit"><i class="fa fa-li fa-lg fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</li>
+</ul>
             <select ng-show="todo.isEdit" class="priority" name="priority" ng-model="todo.priority">
                <option value="AUTO">Auto (from Date)</option>
                <option value="LOW">Low</option>
