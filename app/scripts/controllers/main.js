@@ -113,6 +113,10 @@ angular.module('todoApp')
       $scope.clearTodo = function () {
          clearInput($scope);
       }
+
+      $scope.addOverlay = function() {
+         $("body").toggleClass("overlay");
+      }
    });
 
 function saveProject(project) {

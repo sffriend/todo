@@ -52,7 +52,7 @@ i:hover {
 
 /* Header */
 .header {
-  background-color: $header-color;
+  background: rgba(255, 255, 255, 0.9);
   color: $task-text-r;
   font-weight: 200;
   padding: 1em;
@@ -99,7 +99,7 @@ input[type="radio"] {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 
 .task-label {
@@ -257,6 +257,7 @@ select {
   background-color: $task-text;
   clear: both;
   float:right;
+  clear: both;
   height: 30px;
   margin: 5px 0;
 }

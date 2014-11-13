@@ -244,7 +244,7 @@ i:hover {
 /* Header */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000354}}
 .header {
-  background-color: #FFF;
+  background: rgba(255, 255, 255, 0.9);
   color: #000000;
   font-weight: 200;
   padding: 1em;
@@ -294,7 +294,7 @@ input[type="radio"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003101}}
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003105}}
@@ -464,23 +464,24 @@ select {
   background-color: #FFFFFF;
   clear: both;
   float: right;
+  clear: both;
   height: 30px;
   margin: 5px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003265}}
 .circle-container {
   margin: 8% auto;
   width: 95%;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003271}}
 #done-check {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003274}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003275}}
 .remove {
   -webkit-transform: scale(0);
   transform: scale(0);

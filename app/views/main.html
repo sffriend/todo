@@ -6,10 +6,9 @@
       <!--       <a href="#/projects" href="">
                <li class="add-btn">Projects</li>
             </a> -->
-      <a ng-click="addTask = true">
+      <a ng-click="addTask=true">
          <li class="add-btn">Add Task</li>
       </a>
-      
 
    </ul>
 </div>
@@ -18,6 +17,7 @@
    <!-- Todos input -->
    <div ng-show="addTask" class="add-todo" id="add-todo">
 
+      <button ng-click="clearTodo(); addTask=false"><i class="fa fa-2x fa-times-circle"></i></button>
       <div>
          <label>Task Name</label>
          <input type="text" ng-model="name" placeholder="Task" id="mytext">
@@ -49,19 +49,15 @@
             <option value="MEDIUM">Medium</option>
             <option value="HIGH">High</option>
          </select>
-         
+      </div>   
          <!--
          <div><input type="radio" name="priority" value="AUTO" ng-model="priority" ng-checked="true"><span>Auto From Date</span><br></div>
          <div><input type="radio" name="priority" value="LOW" ng-model="priority"><span>Low</span><br></div>
          <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority"><span>Medium</span><br></div>
          <div><input type="radio" name="priority" value="HIGH" ng-model="priority"><span>High</span><br></div>
          -->
-      </div>
 
-      <button ng-click="addTodo();">Add</button>
-      <button ng-click="clearTodo(); addTask=false">Cancel</button>
-      
-      
+      <button ng-click="addTodo();"><i class="fa fa-2x fa-check-circle"></i></button>      
    </div>
 
 
