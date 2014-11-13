@@ -70,32 +70,43 @@
       <div class="circle {{todo.priority}}" ng-class="{'done' : todo.isDone}" ng-repeat="todo in todos track by $index">
          <div class="wrap">
 
-            <div ng-hide="todo.edit">
+            <div ng-hide="todo.isEdit">
                <button ng-hide="todo.isDone" class="btn btn-danger" ng-click="completeTodo($index)" aria-label="Remove">
                   <i class="fa fa-2x fa-check-circle"></i></button>
                <button ng-show="todo.isDone" class="btn btn-danger" ng-click="completeTodo($index)" aria-label="Remove">
                   <i class="fa fa-2x fa-undo"></i></button>
             </div>
-            <h2 class="name" ng-hide="todo.edit">{{todo.name}}</h2>
-            <input ng-show="todo.edit" type="text" ng-model="todo.name" placeholder="Add a task">
+            <h2 class="name" ng-hide="todo.isEdit">{{todo.name}}</h2>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.name" placeholder="Change task name">
 
-            <h3 ng-hide="todo.edit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
-            <input ng-show="todo.edit" type="text" ng-model="todo.project" placeholder="Add to a project">
+            <h3 ng-hide="todo.isEdit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.project" placeholder="Change project">
 
-            <h3 ng-hide="todo.edit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
-            <input ng-show="todo.edit" type="text" ng-model="todo.date" datepicker>
+            <h3 ng-hide="todo.isEdit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.date" datepicker>
 
-            <h3 ng-hide="todo.edit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
-                <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="editTodo($index)" aria-label="Edit">
-                     <i class="fa fa-2x fa-wrench"></i></button>
-                  <button class="btn btn-danger" ng-show="todo.edit" ng-click="editTodo($index)" aria-label="Edit">
-                     <i class="fa fa-2x fa-check"></i></button>
-                </span>
-                <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="removeTodo(this, $index)" aria-label="Remove">
-                     <i class="fa fa-2x fa-trash"></i></button>
-                </span>
+            <h3 ng-hide="todo.isEdit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
+            <select ng-show="todo.isEdit" class="priority" name="priority" ng-model="todo.priority">
+               <option value="AUTO">Auto (from Date)</option>
+               <option value="LOW">Low</option>
+               <option value="MEDIUM">Medium</option>
+               <option value="HIGH">High</option>
+            </select>
+
+               <span class="input-group-btn">
+                  <!-- wrench -->
+                  <button class="btn btn-danger" ng-hide="todo.isEdit" ng-click="editTodo($index)" aria-label="Edit">
+                     <i class="fa fa-2x fa-wrench"></i>
+                  </button>
+                  <!-- check button on edit -->
+                  <button class="btn btn-danger" ng-show="todo.isEdit" ng-click="saveEdits($index)" aria-label="Edit">
+                     <i class="fa fa-2x fa-check"></i>
+                  </button>
+                  <!-- trash can -->
+                  <button class="btn btn-danger" ng-hide="todo.isEdit" ng-click="removeTodo(this, $index)" aria-label="Remove">
+                     <i class="fa fa-2x fa-trash"></i>
+                  </button>
+               </span>
          </div>
       </div>
    </div>

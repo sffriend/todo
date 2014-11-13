@@ -81,7 +81,6 @@ angular.module('todoApp')
       // removing a task
       $scope.removeTodo = function (t, index) {
          //t.addClass('remove');
-
          $scope.todos.splice(index, 1);
          // overwrite the tasks saved in cookies
          $cookies.todos = JSON.stringify($scope.todos);
@@ -90,11 +89,14 @@ angular.module('todoApp')
       // editing a task
       $scope.editTodo = function (index) {
          console.log($scope.todos[index]);
-         $scope.todos[index].edit = !$scope.todos[index].edit;
-         $scope.todos[index].priority = !$scope.todos[index].edit;
+         $scope.todos[index].isEdit = !$scope.todos[index].isEdit;
          // overwrite the tasks saved in cookies
-         $cookies.todos = JSON.stringify($scope.todos);
       };
+      
+      $scope.saveEdits = function (index) {
+         $scope.todos[index].isEdit = !$scope.todos[index].isEdit;
+         $cookies.todos = JSON.stringify($scope.todos);
+      }
       
       // completing todos
       $scope.completeTodo = function (index) {
