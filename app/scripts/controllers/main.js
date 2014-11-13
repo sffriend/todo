@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * Object to store the todos
  * @param name [String] of the task
@@ -51,18 +50,7 @@ angular.module('todoApp')
          saveProject($scope.project);
 
          if ($scope.priority == priorityEnum.AUTO) {
-            var milToDays = 1.157e8
-            var time = Math.abs((new Date() - new Date($scope.date)) / milToDays);
-
-            if (time <= 5) {
-               $scope.priority = priorityEnum.HIGH;
-            }
-            else if (time > 5 && time <= 20) {
-               $scope.priority = priorityEnum.MEDIUM;
-            }
-            else if (time > 20) {
-               $scope.priority = priorityEnum.LOW;
-            }
+            $scope.automateDate();
          }
 
          var newTodo = new todo($scope.name, $scope.project, $scope.description, $scope.date, $scope.priority, false, false);
@@ -73,6 +61,22 @@ angular.module('todoApp')
          $cookies.todos = JSON.stringify($scope.todos);
          clearInput($scope);
       };
+      
+      $scope.automateDate = function () {
+         var milToDays = 1.157e8
+         var time = Math.abs((new Date() - new Date($scope.date)) / milToDays);
+         
+         // Change time periods?
+         if (time <= 5) {
+            $scope.priority = priorityEnum.HIGH;
+         }
+         else if (time > 5 && time <= 20) {
+            $scope.priority = priorityEnum.MEDIUM;
+         }
+         else if (time > 20) {
+            $scope.priority = priorityEnum.LOW;
+         }
+      }
 
       // removing a task
       $scope.removeTodo = function (t, index) {
@@ -83,23 +87,28 @@ angular.module('todoApp')
          $cookies.todos = JSON.stringify($scope.todos);
       };
 
-      // removing a task
+      // editing a task
       $scope.editTodo = function (index) {
          console.log($scope.todos[index]);
          $scope.todos[index].edit = !$scope.todos[index].edit;
+         $scope.todos[index].priority = !$scope.todos[index].edit;
          // overwrite the tasks saved in cookies
          $cookies.todos = JSON.stringify($scope.todos);
       };
-
-      $scope.completeTodo = function(index) {
+      
+      // completing todos
+      $scope.completeTodo = function (index) {
          $scope.todos[index].isDone = !$scope.todos[index].isDone;
+      };
+      
+      // clear input fields on cancel
+      $scope.clearTodo = function () {
+         clearInput($scope);
       }
-
-
    });
 
 function saveProject(project) {
-  $(".projet").append("<option>" + project + "</option>");
+  $(".project").append("<option>" + project + "</option>");
 }
 
 /**
@@ -154,5 +163,10 @@ angular.module('todoApp').directive('datepicker', function () {
    }
 });
 
+var myapp = angular.module('sampleapp', [ ]);
 
+myapp.controller('samplecontoller', function ($scope) {
+
+  
+});
 
