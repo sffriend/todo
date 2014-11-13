@@ -3,53 +3,65 @@
       <!-- Projects and Tasks -->
       <li class="logo"><h1>BubbleSnapp</h1></li>
       <!-- <li class="btn"><a href="">Tasks</a></li> -->
-<!--       <a href="#/projects" href="">
-         <li class="add-btn">Projects</li>
-      </a> -->
+      <!--       <a href="#/projects" href="">
+               <li class="add-btn">Projects</li>
+            </a> -->
       <a ng-click="addTask = true">
          <li class="add-btn">Add Task</li>
       </a>
+      
+
    </ul>
 </div>
 
 <div class="container">
-
    <!-- Todos input -->
    <div ng-show="addTask" class="add-todo" id="add-todo">
-        <div>
-            <label>Task Name</label>
-            <input type="text" ng-model="name" autofocus placeholder="Math" required>
-        </div><br>
 
-         <div>
-            <label>Project Name</label>
-            <input type="text" placeholder="School" ng-model="project">
-            <select class="projet" ng-model="project">
-            </select>
-        </div><br>
+      <div>
+         <label>Task Name</label>
+         <input type="text" ng-model="name" placeholder="Task" id="mytext">
+      </div>
+      <br>
+      <div>
+         <label>Project Name</label>
+         <input type="text" placeholder="Project" ng-model="project">
+         <select class="project" ng-model="project"></select>
+      </div>
+      <br>
 
-      <!--   <div>
-            <label>Description</label>
-            <input type="text" ng-model="description" placeholder="Optional">
-        </div> -->
+      <div>
+         <label>Description</label>
+         <input type="text" ng-model="description" placeholder="Description (Optional)">
+      </div>
 
-        <div>
-            <label>Date</label>
-            <input id="date-input" type="text" ng-model="date" placeholder="Optional" datepicker>
-             </div><br><br>
+      <div>
+         <label>Date</label>
+         <input id="date-input" type="text" ng-model="date" placeholder="Date (Optional)" datepicker>
+      </div>
+      <br><br>
 
       <div>
          <label class="priority">Priority</label>
-
-         <div><input type="radio" name="priority" value="AUTO" ng-model="priority" ng-checked="true"><span>Auto From Date</span><br>
-         </div>
+         <select class="priority" name="priority" ng-model="priority">
+            <option value="AUTO" selected>Auto (from Date)</option>
+            <option value="LOW">Low</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="HIGH">High</option>
+         </select>
+         
+         <!--
+         <div><input type="radio" name="priority" value="AUTO" ng-model="priority" ng-checked="true"><span>Auto From Date</span><br></div>
          <div><input type="radio" name="priority" value="LOW" ng-model="priority"><span>Low</span><br></div>
          <div><input type="radio" name="priority" value="MEDIUM" ng-model="priority"><span>Medium</span><br></div>
          <div><input type="radio" name="priority" value="HIGH" ng-model="priority"><span>High</span><br></div>
+         -->
       </div>
 
-      <button ng-click="addTodo(); addTask=false">Add</button>
-      <button ng-click="addTask=false">Cancel</button>
+      <button ng-click="addTodo();">Add</button>
+      <button ng-click="clearTodo(); addTask=false">Cancel</button>
+      
+      
    </div>
 
 
@@ -57,40 +69,43 @@
    <div class="circle-container">
       <div class="circle {{todo.priority}}" ng-class="{'done' : todo.isDone}" ng-repeat="todo in todos track by $index">
          <div class="wrap">
-            
-            <div ng-hide="todo.edit">
+
+            <div ng-hide="todo.isEdit">
               <i ng-hide="todo.isDone" ng-click="completeTodo($index)" class="fa fa-3x fa-check-circle"></i>
               <i ng-show="todo.isDone" ng-click="completeTodo($index)"class="fa fa-2x fa-undo"></i>
             </div>
-            <h2 class="name" ng-hide="todo.edit">{{todo.name}}</h2>
-            <input ng-show="todo.edit" type="text" ng-model="todo.name" placeholder="Add a task">
-<ul class="fa-ul">
-            <li ng-hide="todo.edit"><i class="fa fa-li fa-lg fa-folder"></i>&nbsp; {{todo.project}}</li>
-            <input ng-show="todo.edit" type="text" ng-model="todo.project" placeholder="Add to a project">
+            <h2 class="name" ng-hide="todo.isEdit">{{todo.name}}</h2>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.name" placeholder="Change task name">
 
-            <li ng-hide="todo.edit"><i class="fa fa-li fa-lg fa-calendar-o"></i>&nbsp; {{todo.date}}</li>
-            <input ng-show="todo.edit" type="text" ng-model="todo.date" datepicker>
+            <h3 ng-hide="todo.isEdit"><i class="fa fa-folder"></i>&nbsp; {{todo.project}}</h3>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.project" placeholder="Change project">
 
-            <li ng-hide="todo.edit"><i class="fa fa-li fa-lg fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</li>
-</ul>
-        <div ng-show="todo.edit"><div>
-            <input type="radio" name="priority" value="AUTO" ng-model="todo.priority" ng-checked="true"><span>Auto From Date</span><br>
+            <h3 ng-hide="todo.isEdit"><i class="fa fa-calendar-o"></i>&nbsp; {{todo.date}}</h3>
+            <input ng-show="todo.isEdit" type="text" ng-model="todo.date" datepicker>
+
+            <h3 ng-hide="todo.isEdit"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</h3>
+            <select ng-show="todo.isEdit" class="priority" name="priority" ng-model="todo.priority">
+               <option value="AUTO">Auto (from Date)</option>
+               <option value="LOW">Low</option>
+               <option value="MEDIUM">Medium</option>
+               <option value="HIGH">High</option>
+            </select>
+
+               <span class="input-group-btn">
+                  <!-- wrench -->
+                  <button class="btn btn-danger" ng-hide="todo.isEdit" ng-click="editTodo($index)" aria-label="Edit">
+                     <i class="fa fa-2x fa-wrench"></i>
+                  </button>
+                  <!-- check button on edit -->
+                  <button class="btn btn-danger" ng-show="todo.isEdit" ng-click="saveEdits($index)" aria-label="Edit">
+                     <i class="fa fa-2x fa-check"></i>
+                  </button>
+                  <!-- trash can -->
+                  <button class="btn btn-danger" ng-hide="todo.isEdit" ng-click="removeTodo(this, $index)" aria-label="Remove">
+                     <i class="fa fa-2x fa-trash"></i>
+                  </button>
+               </span>
          </div>
-         <div><input type="radio" name="priority" value="LOW" ng-model="todo.priority"><span>Low</span><br></div>
-         <div><input type="radio" name="priority" value="MEDIUM" ng-model="todo.priority"><span>Medium</span><br></div>
-         <div><input type="radio" name="priority" value="HIGH" ng-model="todo.priority"><span>High</span><br></div>
-</div>
-                <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="editTodo($index)" aria-label="Edit"><i class="fa fa-2x fa-wrench"></i></button>
-                  <button class="btn btn-danger" ng-show="todo.edit" ng-click="editTodo($index)" aria-label="Edit"><i class="fa fa-2x fa-check"></i></button>
-                </span>
-                <span class="input-group-btn">
-                  <button class="btn btn-danger" ng-hide="todo.edit" ng-click="removeTodo(this, $index)" aria-label="Remove"><i class="fa fa-2x fa-trash"></i></button>
-                </span>
-
-
-         </div>
-
       </div>
-
    </div>
+</div>
