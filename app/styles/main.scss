@@ -20,6 +20,7 @@ body, html {
   padding: 0;
   font-family: $font;
   background-color: $background-color;
+  color: $task-text;
   @include global-reset;
 }
 
@@ -37,10 +38,17 @@ button {
 
 }
 
-button:hover {
+button:hover{
   background: $task-text;
   color: $task-text-r;
   cursor: pointer;
+}
+
+i {
+  color: $task-text;
+}
+i:hover {
+  color: $task-text-r;
 }
 
 /* Header */
@@ -139,11 +147,19 @@ input[type="radio"] {
 
 .name {
   font-size: 1.6em;
-  margin: 0 5px 20px;
+  margin: 15px 5px 20px;
+  color: #FFF;
+font-weight: 600;
+font-style: italic;
 }
 
 h3 {
   margin: 8px;
+}
+
+.fa-ul>li {
+  margin: 20px;
+  text-align: left;
 }
 
 .add-btn:hover {
@@ -163,6 +179,7 @@ h3 {
 
   div, button {
     margin: 3%;
+    clear: both;
   }
 }
 
@@ -191,14 +208,14 @@ input {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 240px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
   padding: 15px;
   margin: 4%;
 
   & > .wrap {
     position: relative;
-    top: 15%;
+    //top: 15%;
     text-align: center;
     margin: 0 auto;
     width: 80%;
@@ -210,13 +227,13 @@ input {
 
   input {
     font-family: $font;
-    width: 100%;
+    width: auto;
   }
 }
 
 .done {
   background-color: $task-color;
-  @include opacity(0.5);
+  @include opacity(0.3);
 }
 
 .LOW {
@@ -247,16 +264,8 @@ select {
 
 .circle-container {
   margin: 8% auto;
-  width: 90%;
+  width: 95%;
   text-align: center;
-}
-
-.project-label {
-  //background-color: #FFF;
-  color: $task-text-r;
-  height: auto;
-  width: 100%;
-  padding: 5px;
 }
 
 #done-check {

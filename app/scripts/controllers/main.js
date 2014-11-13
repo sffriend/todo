@@ -19,7 +19,6 @@ var todo = function (name, project, description, date, priority, isDone, edit) {
    this.edit = false;
 };
 
-
 /**
  * Define priority of todo
  *
@@ -65,6 +64,14 @@ angular.module('todoApp')
             }
          }
 
+         if (!($scope.date)) {
+            $scope.date = "None";
+         }
+
+         if (!($scope.project)) {
+            $scope.project = "None";
+         }
+
          var newTodo = new todo($scope.name, $scope.project, $scope.description, $scope.date, $scope.priority, false, false);
          $scope.todos.unshift(newTodo);
          // var newProject = new project($scope.project);
@@ -85,7 +92,6 @@ angular.module('todoApp')
 
       // removing a task
       $scope.editTodo = function (index) {
-         console.log($scope.todos[index]);
          $scope.todos[index].edit = !$scope.todos[index].edit;
          // overwrite the tasks saved in cookies
          $cookies.todos = JSON.stringify($scope.todos);
@@ -95,6 +101,10 @@ angular.module('todoApp')
          $scope.todos[index].isDone = !$scope.todos[index].isDone;
       }
 
+      // $scope.addTask = function(index) {
+      //    $scope.todos[index].addTask = !$scope.todos[index].addTask;
+      //    console.log(addTask);
+      // }
 
    });
 
@@ -134,6 +144,7 @@ function clearInput($scope) {
    $scope.priority = 'AUTO';
    $(this).closest('.add-todo').hide();
 }
+
 
 
 angular.module('todoApp').directive('datepicker', function () {
