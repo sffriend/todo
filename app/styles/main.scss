@@ -6,12 +6,12 @@
 $font: 'Open Sans', sans-serif;
 $header-color: #FFF;
 $background-color: #F6F7F4;
-$task-color: #C0C2BF;
+$task-color: #F0F0F0;
 $task-text: #FFFFFF;
 $task-text-r: #000000;
-$high: #274C59;
-$medium: #5FBAD9;
-$low: #A4D0DF;
+$high: #D0243F;
+$medium: #F8BC17;
+$low: #008AC7;
 @include global-reset;
 
 /* Global Styles & Typography */
@@ -21,12 +21,11 @@ body, html {
   font-family: $font;
   background-color: $background-color;
   color: $task-text;
-  @include global-reset;
 }
 
-li h1 {
-  font-size: 1.5em;
+h2 {
   font-weight: 200;
+  font-size: 2em;
 }
 
 button {
@@ -38,16 +37,43 @@ button {
 }
 
 button:hover{
-  background: $task-text;
-  color: $task-text-r;
+  //background: $task-text;
   cursor: pointer;
 }
 
 i {
   color: $task-text;
 }
-i:hover {
+
+// i:hover {
+//   color: $task-text-r;
+// }
+
+label {
   color: $task-text-r;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+input, span {
+  margin: 0;
+  float: right;
+}
+
+input {
+  height: 30px;
+  font-size: 1em;
+}
+
+
+
+select {
+  background-color: $task-text;
+  clear: both;
+  float:right;
+  clear: both;
+  height: 30px;
+  margin: 5px 0;
 }
 
 /* Header */
@@ -72,40 +98,167 @@ i:hover {
       margin: 0;
       padding: 15px;
     }
+  }
+}
 
-    a {
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: 400;
+.editing-mode {
+  margin-top: 5%;
+}
+
+.fa-edit {
+  margin-left: 0;
+}
+
+//Add Button
+.add-btn {
+  background: #2B2B2A;
+  float: right;
+  color: $task-text;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: $task-text-r;
+}
+
+// Add todo
+.add-todo {
+  background-color: $task-color;
+  color: $task-text-r;
+  margin: 150px auto;
+  padding: 15px;
+  width: 380px;
+  height: 345px;
+  z-index: 2;
+  border: 15px solid black;
+
+  div, button {
+    clear: both;
+    margin-bottom: 30px;
+  }
+
+  .clear-btn {
+    clear: none;
+  }
+
+  h2 {
+    float: left;
+  }
+
+  button {
+    float: right;
+  }
+}
+
+/* Circle Animation */
+.circle-container {
+  margin: 8% auto;
+  width: 95%;
+  text-align: center;
+}
+
+.circle {
+  @include transform-origin(50%, 50%);
+  @include border-radius(50%);
+  background-color: #2B2B2A;
+  //cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 320px;
+  height: 320px;
+  padding: 15px;
+  margin: 3%;
+
+  & > .wrap {
+    position: relative;
+    //top: 15%;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    max-height: 250px;
+
+    h3 {
+      text-align: left;
     }
   }
 
+  input {
+    font-family: $font;
+    width: auto;
+    float: none;
+    margin: 5px;
+  }
+
+  .fa-ul>li {
+    margin: 20px;
+    text-align: left;
+  }
+  
+  select {
+    float: none;
+  }
+  
+  li h1 {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+
+  .input-group-btn {
+    float: none;
+    text-align: center;
+  }
 }
 
-label {
-  font-size: 1.2em;
+.name {
+  font-size: 1.6em;
+  margin: 15px 5px 20px;
+  color: #FFF;
   font-weight: 600;
+  font-style: italic;
 }
 
-input, span {
-  margin: 0;
-  float: right;
+// Effects
+
+.done {
+  background-color: $task-color;
+  @include opacity(0.3);
 }
 
-input[type="radio"] {
-  margin: 5px;
-  height: auto;
-  float: right;
+.LOW {
+  background-color: $low;
+  // include this for size priority
+  //@include scale(0.75);
+}
+
+.MEDIUM {
+  background-color: $medium;
+  // include this for size priority
+  // @include scale(1);
+}
+
+.HIGH {
+  background-color: $high;
+  // include this for size priority
+  //@include scale(1.25);
+}
+
+#done-check {
+  float: left;
+}
+
+.remove {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
 }
 
 .overlay {
   opacity: 0.5;
-}
-
-.task-label {
-  background-color: $task-text;
-  height: 50px;
-  width: 100%;
 }
 
 // tried to make the half circle add button ---- doesn't work yet
@@ -133,149 +286,4 @@ input[type="radio"] {
     background-color: $task-color;
     z-index: 1;
   }
-}
-
-.add-btn {
-  background: $task-color;
-  float: right;
-  color: $task-text;
-  font-weight: 400;
-  font-size: 1.5;
-  cursor: pointer;
-}
-
-.name {
-  font-size: 1.6em;
-  margin: 15px 5px 20px;
-  color: #FFF;
-font-weight: 600;
-font-style: italic;
-}
-
-h3 {
-  margin: 8px;
-}
-
-.fa-ul>li {
-  margin: 20px;
-  text-align: left;
-}
-
-.add-btn:hover {
-  background: $task-text-r;
-  color: $task-text;
-}
-
-.add-todo {
-  background-color: $task-color;
-  color: $task-text-r;
-  margin: 5% auto;
-  padding: 1%;
-  position: absolute;
-  top: 100px;
-  width: 340px;
-  z-index: 2;
-
-  div, button {
-    margin: 3%;
-    clear: both;
-  }
-}
-
-.input-group-btn {
-  float: none;
-  text-align: center;
-}
-
-input {
-  height: 30px;
-  font-size: 1em;
-  clear:  both;
-}
-
-.priority {
-  float: left;
-}
-
-/* Circle Animation */
-
-.circle {
-  @include transform-origin(50%, 50%);
-  @include border-radius(50%);
-  background-color: $task-color;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 300px;
-  height: 300px;
-  padding: 15px;
-  margin: 4%;
-
-  & > .wrap {
-    position: relative;
-    //top: 15%;
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-
-    h3 {
-      text-align: left;
-    }
-  }
-
-  input {
-    font-family: $font;
-    width: auto;
-  }
-}
-
-.done {
-  background-color: $task-color;
-  @include opacity(0.3);
-}
-
-.LOW {
-  background-color: $low;
-  // include this for size priority
-  //@include scale(0.75);
-}
-
-.MEDIUM {
-  background-color: $medium;
-  // include this for size priority
-  // @include scale(1);
-}
-
-.HIGH {
-  background-color: $high;
-  // include this for size priority
-  //@include scale(1.25);
-}
-
-select {
-  background-color: $task-text;
-  clear: both;
-  float:right;
-  clear: both;
-  height: 30px;
-  margin: 5px 0;
-}
-
-.circle-container {
-  margin: 8% auto;
-  width: 95%;
-  text-align: center;
-}
-
-#done-check {
-  float: left;
-}
-
-.remove {
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
 }

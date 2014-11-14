@@ -46,6 +46,7 @@ angular.module('todoApp')
 
       // adding a task
       $scope.addTodo = function () {
+         $("#name").focus();
          saveProject($scope.project);
 
          if ($scope.priority == priorityEnum.AUTO) {
@@ -53,11 +54,11 @@ angular.module('todoApp')
          }
 
          if (!($scope.date)) {
-            $scope.date = "None";
+            $scope.date = "No Due Date";
          }
 
          if (!($scope.project)) {
-            $scope.project = "None";
+            $scope.project = "No Project";
          }
 
          var newTodo = new todo($scope.name, $scope.project, $scope.description, $scope.date, $scope.priority, false, false);
@@ -156,7 +157,7 @@ function clearInput($scope) {
    $(this).closest('.add-todo').hide();
 }
 
-
+// Date Picker Directive
 
 angular.module('todoApp').directive('datepicker', function () {
    return {
@@ -176,10 +177,10 @@ angular.module('todoApp').directive('datepicker', function () {
    }
 });
 
-var myapp = angular.module('sampleapp', [ ]);
-
-myapp.controller('samplecontoller', function ($scope) {
-
-  
-});
-
+function checkSubmit(e)
+{
+   if(e && e.keyCode == 13)
+   {
+      this.addTodo();
+   }
+}
