@@ -228,21 +228,24 @@ select {
 }
 
 .LOW {
+  // include this for color priority
   background-color: $low;
   // include this for size priority
-  //@include scale(0.75);
+  @include scale(0.75);
 }
 
 .MEDIUM {
+  // include this for color priority
   background-color: $medium;
   // include this for size priority
-  // @include scale(1);
+  @include scale(1);
 }
 
 .HIGH {
+  // include this for color priority
   background-color: $high;
   // include this for size priority
-  //@include scale(1.25);
+  @include scale(1.25);
 }
 
 #done-check {
