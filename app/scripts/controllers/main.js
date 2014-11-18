@@ -3,9 +3,11 @@
 /**
  * Object to store the todos
  * @param name [String] of the task
+ * @param project [String] of the task
  * @param description [String] of the task
  * @param date [Date] set for the task
- * @param done [boolean] completed task
+ * @param isDone [boolean] completed task
+ * @param edit [boolean] editing mode
  * @param priority [
  */
 var todo = function (name, project, description, date, priority, isDone, edit) {
@@ -21,14 +23,14 @@ var todo = function (name, project, description, date, priority, isDone, edit) {
 /**
  * Define priority of todo
  *
- * @type {{NONE: string, LOW: string, MEDIUM: string, HIGH: string}}
+ * @type {{AUTO: string, LOW: string, MEDIUM: string, HIGH: string}}
  */
 var priorityEnum = {
    AUTO: 'AUTO',
    LOW: 'LOW',
    MEDIUM: 'MEDIUM',
    HIGH: 'HIGH'
-}
+};
 
 
 angular.module('todoApp')
@@ -71,7 +73,7 @@ angular.module('todoApp')
       };
       
       $scope.automateDate = function () {
-         var milToDays = 1.157e8
+         var milToDays = 1.157e8;
          var time = Math.abs((new Date() - new Date($scope.date)) / milToDays);
          
          // Change time periods?
@@ -84,7 +86,7 @@ angular.module('todoApp')
          else if (time > 20) {
             $scope.priority = priorityEnum.LOW;
          }
-      }
+      };
 
       // removing a task
       $scope.removeTodo = function (t, index) {
@@ -103,7 +105,7 @@ angular.module('todoApp')
       $scope.saveEdits = function (index) {
          $scope.todos[index].isEdit = !$scope.todos[index].isEdit;
          $cookies.todos = JSON.stringify($scope.todos);
-      }
+      };
       
       // completing todos
       $scope.completeTodo = function (index) {
@@ -113,7 +115,7 @@ angular.module('todoApp')
       // clear input fields on cancel
       $scope.clearTodo = function () {
          clearInput($scope);
-      }
+      };
 
       $scope.addOverlay = function() {
          $("body").toggleClass("overlay");
@@ -124,25 +126,8 @@ function saveProject(project) {
   $(".project").append("<option>" + project + "</option>");
 }
 
-/**
- *
- * @returns {Date}
- */
-function convertDate() {
-   return null;
-}
-
-function createPriority() {
-   return 'MEDIUM';
-}
 var addTask = false;
 
-function addTaskk($scope) {
-   console.log(addTask);
-   addTask = !addTask;
-   $scope.addTask = addTask;
-   console.log(addTask);
-}
 
 /**
  * Clears the input fields
