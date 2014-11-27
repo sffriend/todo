@@ -167,8 +167,8 @@ select {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 320px;
-  height: 320px;
+  width: 270px;
+  height: 270px;
   padding: 15px;
   margin: 3%;
 
@@ -177,7 +177,7 @@ select {
     //top: 15%;
     text-align: center;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     max-height: 250px;
 
     h3 {
@@ -224,28 +224,28 @@ select {
 
 .done {
   background-color: $task-color;
-  @include opacity(0.3);
+  //@include opacity(0.3);
 }
 
 .LOW {
   // include this for color priority
   background-color: $low;
   // include this for size priority
-  @include scale(0.75);
+  //@include scale(0.75);
 }
 
 .MEDIUM {
   // include this for color priority
   background-color: $medium;
   // include this for size priority
-  @include scale(1);
+  //@include scale(1);
 }
 
 .HIGH {
   // include this for color priority
   background-color: $high;
   // include this for size priority
-  @include scale(1.25);
+  //@include scale(1.25);
 }
 
 #done-check {

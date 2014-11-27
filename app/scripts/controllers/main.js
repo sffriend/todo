@@ -26,10 +26,10 @@ var todo = function (name, project, description, date, priority, isDone, edit) {
  * @type {{AUTO: string, LOW: string, MEDIUM: string, HIGH: string}}
  */
 var priorityEnum = {
-   AUTO: 'AUTO',
-   LOW: 'LOW',
-   MEDIUM: 'MEDIUM',
-   HIGH: 'HIGH'
+   AUTO: 0,
+   LOW: 1,
+   MEDIUM: 2,
+   HIGH: 3
 };
 
 
@@ -42,7 +42,7 @@ angular.module('todoApp')
       if ($cookies != undefined && $cookies.todos != undefined) {
          var todos = JSON.parse($cookies.todos);
          for (var i = 0; i < todos.length; i++) {
-            $scope.todos.unshift(todos[i]);
+            $scope.todos[i] = todos[i];
          }
       }
 
@@ -63,11 +63,10 @@ angular.module('todoApp')
             $scope.project = "No Project";
          }
 
+
          var newTodo = new todo($scope.name, $scope.project, $scope.description, $scope.date, $scope.priority, false, false);
          $scope.todos.unshift(newTodo);
-         // var newProject = new project($scope.project);
-         // $scope.projects.push(newProject);
-         //reload cookies for todos
+         sortByPriority($scope.todos);
          $cookies.todos = JSON.stringify($scope.todos);
          clearInput($scope);
       };
@@ -104,6 +103,7 @@ angular.module('todoApp')
       
       $scope.saveEdits = function (index) {
          $scope.todos[index].isEdit = !$scope.todos[index].isEdit;
+         sortByPriority($scope.todos);
          $cookies.todos = JSON.stringify($scope.todos);
       };
       
@@ -121,6 +121,20 @@ angular.module('todoApp')
          $("body").toggleClass("overlay");
       }
    });
+
+function sortByPriority(list) {
+
+   var len = list.length,     // number of items in the array
+   temp,
+   i = 0;
+
+   for (i = 0, j; i < len; ++i) {
+      temp = list[i];
+      for (var j = i - 1; j >= 0 && priorityEnum[list[j].priority] < priorityEnum[temp.priority]; --j)
+         list[j + 1] = list[j];
+         list[j + 1] = temp;
+      }
+}
 
 function saveProject(project) {
   $(".project").append("<option>" + project + "</option>");
