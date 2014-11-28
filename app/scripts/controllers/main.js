@@ -122,7 +122,6 @@ angular.module('todoApp')
    });
 
 function sortByPriority(list) {
-
    var len = list.length,     // number of items in the array
    temp,
    i = 0;
@@ -152,7 +151,6 @@ function clearInput($scope) {
    $scope.date = '';
    $scope.project = '';
    $scope.priority = 'AUTO';
-   $(this).closest('.add-todo').hide();
 }
 
 // Date Picker Directive
