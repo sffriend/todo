@@ -63,6 +63,12 @@ input, span {
 input {
   height: 30px;
   font-size: 1em;
+
+  &.calendar-input {
+    background: fa-calendar;
+    position: absolute;
+
+  }
 }
 
 

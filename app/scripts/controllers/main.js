@@ -98,7 +98,6 @@ angular.module('todoApp')
       // editing a task
       $scope.editTodo = function (index) {
          $scope.todos[index].isEdit = !$scope.todos[index].isEdit;
-         // overwrite the tasks saved in cookies
       };
       
       $scope.saveEdits = function (index) {

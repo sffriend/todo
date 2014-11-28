@@ -32,11 +32,6 @@
          <select class="project" ng-model="project"></select>
       </div>
 
-      <!-- <div>
-         <label>Description</label>
-         <input type="text" ng-model="description" placeholder="Description (Optional)">
-      </div>
- -->
       <div>
          <label>Date</label>
          <input id="date-input" type="text" ng-model="date" placeholder="Date (Optional)" datepicker>
@@ -73,12 +68,12 @@
             <input ng-show="todo.isEdit" type="text" ng-model="todo.project" placeholder="Add to a project">
 
             <li ng-hide="todo.isEdit"><i class="fa fa-li fa-lg fa-calendar-o"></i>&nbsp; {{todo.date}}</li>
-            <input ng-show="todo.isEdit" type="text" ng-model="todo.date" datepicker>
+            <input ng-show="todo.isEdit" type="text" class="input-calendar" ng-model="todo.date" datepicker>
 
             <li ng-hide="todo.isEdit"><i class="fa fa-li fa-lg fa-exclamation-triangle fa-fw"></i>&nbsp; Priority: {{todo.priority}}</li>
 </ul>
             <select ng-show="todo.isEdit" class="priority" name="priority" ng-model="todo.priority">
-               <option value="AUTO">Auto (from Date)</option>
+               <option value="AUTO" selected="true">Auto (from Date)</option>
                <option value="LOW">Low</option>
                <option value="MEDIUM">Medium</option>
                <option value="HIGH">High</option>
@@ -88,7 +83,7 @@
                   <!-- wrench -->
                   <button class="btn btn-danger" ng-hide="todo.isEdit" ng-click="editTodo($index)" aria-label="Edit">
                      <i class="fa fa-2x fa-wrench"></i>
-                  </button>
+                  <x/button>
                   <!-- check button on edit -->
                   <button class="btn btn-danger" ng-show="todo.isEdit" ng-click="saveEdits($index)" aria-label="Edit">
                      <i class="fa fa-2x fa-check"></i>
