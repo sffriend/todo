@@ -148,7 +148,7 @@ h2 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\0000331}}
 button {
-  padding: 10px;
+  padding: 7px;
   margin: 5px;
   background: #000000;
   border: 0;
@@ -291,17 +291,17 @@ select {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 270px;
-  height: 270px;
-  padding: 15px;
-  margin: 3%;
+  width: 210px;
+  height: 210px;
+  padding: 8px;
+  margin: 2%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003175}}
 .circle > .wrap {
   position: relative;
   text-align: center;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-height: 250px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stephaniefriend\/Documents\/todo\/app\/styles\/main\.scss}line{font-family:\00003183}}

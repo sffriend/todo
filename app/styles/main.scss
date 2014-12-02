@@ -29,7 +29,7 @@ h2 {
 }
 
 button {
-  padding: 10px;
+  padding: 7px;
   margin: 5px;
   background: $task-text-r;
   border: 0;
@@ -167,17 +167,17 @@ select {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 270px;
-  height: 270px;
-  padding: 15px;
-  margin: 3%;
+  width: 210px;
+  height: 210px;
+  padding: 8px;
+  margin: 2%;
 
   & > .wrap {
     position: relative;
     //top: 15%;
     text-align: center;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     max-height: 250px;
 
     h3 {
